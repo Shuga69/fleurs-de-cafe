@@ -1,0 +1,80 @@
+.main-section__newest-release__text{
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    margin-top: 72px;
+}
+.main-section__newest-release__card-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 4px;
+}
+.main-section__newest-release__card-container div {
+    font-size: 0;
+    width: 367px;
+    height: 367px;
+}
+.hover-release-card-action{
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #FFFFFF80;
+
+  
+}
+.newest-release__card__first{
+    background-image: url('../assets/releaseImage3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.newest-release__card__second{
+    background-image: url('../assets/releaseImage2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.newest-release__card__third{
+    background-image: url('../assets/releaseImage3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-back{
+    position: absolute;
+}
+.hover-release-card-action:hover{
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+
+.hover-release-card-action p{
+   align-self: flex-end;
+   text-transform: uppercase;
+   font-size: 15px;
+   line-height: 17px;
+}
+.hover-release-card-action img{
+    align-self: flex-end;
+    justify-self: flex-start;
+   
+ 
+ }
+ .hover-release-card-action div{
+    margin-top: -18px;
+}
+
+
+.hover-release-card-action div p:last-child{
+    margin-top: 12px;
+    font-size: 20px;
+    line-height: 23px;
+}
+.hover-release-card-action div:last-child{
+    display: flex;
+    justify-self: flex-end;
+}
