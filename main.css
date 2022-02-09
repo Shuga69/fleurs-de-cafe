@@ -1,17 +1,10 @@
-@font-face {
-    font-family: 'Gill Sans';
-    font-style: normal;
-    font-weight: normal;
-    src: url('/fonts/Gill\ Sans.otf');
-  }
-
-
 *,*:before,*:after{
     margin: 0;
     font-size: 18px;
 
-   font-family: 'Gill Sans', sans-serif;
+   font-family: 'GillSansC', 'sans-serif';
    font-weight: 300;
+   font-style: normal;
     letter-spacing: 0.24em;
     color: #231F20;
     box-sizing: border-box;
@@ -61,9 +54,17 @@
       align-items: center;
       justify-content: space-between;
       width: 115px;
-      
+      cursor: pointer;
   }
-
+ 
+.search-btn{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.search-input{
+    display: none;
+}
   .main-logo{
       display: flex;
       justify-content: center;
@@ -76,8 +77,9 @@
         padding:48px 0 38px 0;
        
     }
-.menu-list-item.active{
+.menu-list-item a:hover{
     border-bottom: 1px solid #231F20;
+  
 }
 .menu-list-item{
     cursor: pointer;
@@ -102,16 +104,34 @@
 }
 .main-section__newest-release__card-container div {
     font-size: 0;
-
+    width: 367px;
+    height: 367px;
 }
 .hover-release-card-action{
-    position: absolute;
     opacity: 0;
-    width: 92%;
-    height: calc(367px - 3%);
+    width: 100%;
+    height: 100%;
     background-color: #FFFFFF80;
+  
 }
-
+.newest-release__card__first{
+    background-image: url('./assets/releaseImage3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.newest-release__card__second{
+    background-image: url('./assets/releaseImage2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.newest-release__card__third{
+    background-image: url('./assets/releaseImage3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card-back{
+    position: absolute;
+}
 .hover-release-card-action:hover{
     opacity: 1;
     display: flex;
@@ -224,7 +244,7 @@ cursor: pointer;
 .footer-menu{
     display: flex;
     justify-content: space-between;
-    width: 48%;
+    width: 57%;
 }
 .footer-copyright p{
     font-size: 13px;
@@ -233,10 +253,10 @@ cursor: pointer;
     text-align: center;
 }
 .footer-copyright{
-    padding: 49px 0px 32px 0px;
+    padding-bottom: 32px;
 }
 .footer-copyright strong{
-    font-weight: 500;
+    font-weight: bold;
     font-size: 13px;
     line-height: 15px;
     color: #7B7979;
@@ -247,7 +267,13 @@ cursor: pointer;
     cursor: pointer;
     font-size: 15px;
 line-height: 17px;
+
 }
+.footer-menu__item a:hover{
+    border-bottom: 1px solid #231F20;
+}
+
+
 .footer-menu__item-social{
     margin-top: 18px;
     cursor: pointer;
@@ -258,10 +284,15 @@ line-height: 17px;
 .footer-copyright__bottom{
     margin-top: 11px;
 }
-.footer-menu__item-two-line{
+.footer-menu__item-two-line p{
     line-height: 150%;
 }
-
+.footer-menu__item-two-line{
+    border-bottom: none !important;
+}
+.footer-menu__item-two-line:hover > p{
+     border-bottom: 1px solid #231F20;
+}
 
 #container{
     position: relative;
@@ -313,7 +344,7 @@ line-height: 17px;
     justify-content:center;
     position:absolute;
     width:10%;
-    height:10%;
+    height:7%;
     border-radius:50%;
     cursor: pointer;
     top:45%;
@@ -333,19 +364,33 @@ line-height: 17px;
     justify-content: center;
     width: 100%;
   }
-  
-  .dot {
-    width: 8px;
-    height: 8px;
-    background: red;
+  .main-section__slider__dots{
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
-    margin: 0 3px;
+    border: 1.5px solid #D1D1D1;
+    padding: 0px;
+    background-color: transparent;
+    margin: 0 5px;
+    display: inline-block;
     cursor: pointer;
+    transition: 0.5s ease;
   }
-  .active-dot {
-    background: #3f3f3f;
-    cursor: default;
+  .line-btn-group{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
   }
+  .main-section__slider__dots:hover{
+    background-color: #717171;
+  }
+  .main-section__slider__dots.active{
+   
+    background: #D6C5B8;
+    background-clip: content-box, padding-box;
+    padding: 2px;
+  }
+  
   
 .mobile{
     display: none;
@@ -392,7 +437,11 @@ line-height: 17px;
 .toggle-line-mobile.active{
     display: none;
 }
-
+hr.footer-hr{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    border-top: 1px solid #FFFFFF26; 
+}
 @media only screen and (max-width: 1200px) {
     .main-section__learn-how-to{
        justify-content: center;
@@ -487,8 +536,12 @@ line-height: 17px;
         text-align: center;
         text-transform: uppercase;
     }
+    .side-drawer__navigation-link a:hover{
+       border-bottom: 1px solid #231F20;
+    }
     .main-section__slider{
         margin-top: 25px;
+        
     }
     .toggle-menu{
         height: 100%;
@@ -569,6 +622,12 @@ line-height: 17px;
         width: 92%;
         height: 345px;
         margin-top: 52px;
+        
+    }
+    .main-section__learn-how-to__image img{
+ 
+        -o-object-fit: cover;
+        object-fit: cover;
     }
    .main-section__newest-release__text{
        text-align: center;
@@ -584,4 +643,70 @@ line-height: 17px;
     width: 100%;
     height: 100%;
 }
+.main-section__slider__image{
+   height: 375px !important;
+   
+   -o-object-fit:cover;
+      object-fit:cover;
+      object-position: -260px;
+ 
+}
+#container{
+    padding-top:109%;
+}
+
+.main-section__slider__button.left{
+    display: none;
+}
+.main-section__slider__button.right{
+    display: none;
+}
+.line-btn-group{
+    bottom: 0;
+}
+.main-section__newest-release__text{
+    
+    margin-top: 52px;
+}
+.footer-copyright{
+    margin-top: 68px;
+}
+.toggle-social-links{
+    margin-top: 137px;
+}
+}
+
+@media only screen and (max-width: 400px) {
+.main-section__newest-release__card-container div {
+    width: 100%;
+}
+.footer-copyright{
+    margin-top: 28px;
+}
+.toggle-social-links{
+    margin-top: 40px;
+}
+
+
+}
+@media only screen and (max-height: 740px) {
+    
+    #container{
+        padding-top:100%;
+    }
+    
+    }
+@media only screen and (max-height: 668px) {
+    
+    #container{
+        padding-top:110%;
+    }
+        
+}
+@media only screen and (max-height: 569px) {
+    
+    #container{
+        padding-top:125%;
+    }
+        
 }
