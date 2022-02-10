@@ -1,23 +1,28 @@
 @font-face {
-    font-family: 'GillSans';
-    src: url('GillSans Bold.woff2') format('woff2');
-    font-weight: bold;
+    font-family: 'Gill Sans';
+    src: local('Gill Sans Bold'), local('Gill-Sans-Bold'),
+        url('GillSansC-Bold.woff2') format('woff2'),
+        url('GillSansC-Bold.woff') format('woff'),
+        url('GillSansC-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
-    font-display: swap;
-}
+  }
 
 @font-face {
-    font-family: 'GillSans';
-    src: url('GillSans-Light.woff2') format('woff2');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'GillSans';
-    src: url('GillSans-Regular.woff2') format('woff2');
+    font-family: 'Gill Sans';
+    src: local('Gill Sans Regular'), local('Gill-Sans-Regular'),
+        url('GillSansC.woff2') format('woff2'),
+        url('GillSansC.woff') format('woff'),
+        url('GillSansC.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
-}
+  }
+@font-face {
+    font-family: 'Gill Sans';
+    src: local('Gill Sans Light'), local('Gill-Sans-Light'),
+        url('GillSansLightC.woff2') format('woff2'),
+        url('GillSansLightC.woff') format('woff'),
+        url('GillSansLightC.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }

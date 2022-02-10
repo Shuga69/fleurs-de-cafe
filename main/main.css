@@ -120,7 +120,7 @@ text-transform: uppercase;
 .main-section__newsletter__title{
     font-size: 32px;
     line-height: 37px;
-    font-weight: 400;
+    font-weight: 400 !important;
     text-transform: uppercase;
 }
 .main-section__newsletter__input{
