@@ -1,10 +1,44 @@
-function renderDesktop() {
+let mockData=[
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {price:"$15.50",image:`../assets/releaseImage3.jpg`}
+]
+
+
+
+function renderDesktop(price,image) {
     let str = '';
     str = `<div class="hover-release-card desktop"><div style="background-image: url(../assets/releaseImage3.jpg)" class="newest-release__card__first">
     <div class="hover-release-card-action">
         <img src="../assets/Heart_icon.svg"/>
         <div>
-            <p>$15.50</p>
+            <p>${price}</p>
             <p>Dark city</p>    
         </div>
        
