@@ -19,13 +19,15 @@ function renderMobile() {
     str = `<div class="hover-release-card mobile">
     <img width="165px" src="../assets/releaseImage2.jpg"/>
     <div class="hover-release-card">
-        <img  src="../assets/Heart_icon.svg"/>
+       
         <div>
             <p>$15.50</p>
-            <p>Dark city</p>    
+            
+            <p>Dark city</p>   
+            <p class="add-btn">ADD TO CART</p> 
         </div>
        
-        <p>ADD TO CART</p>
+      
     </div>
     </div>`
 console.log(str)
