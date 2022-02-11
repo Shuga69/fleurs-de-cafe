@@ -71,7 +71,7 @@ swipeStart = function() {
 
     posY2 = posY1 - evt.clientY;
     posY1 = evt.clientY;
-    console.log(posX1,posX2,posY2,posY1)
+
     
     if (!isSwipe && !isScroll) {
       let posY = Math.abs(posY2);
@@ -126,7 +126,7 @@ swipeStart = function() {
                 current_img_index = 0;
                
             }else{
-                console.log(current_img_index === --imgs_containers.length)
+               
             current_img_index++;}
         }
        
@@ -145,7 +145,7 @@ swipeStart = function() {
     var current = document.getElementsByClassName("active");
             current[0].className = current[0].className.replace(" active", "");
     dots[current_img_index].classList.add('active')
-    console.log(current_img_index)
+   
   },
 
   setTransform = function(transform, comapreTransform) {
@@ -169,8 +169,6 @@ sliderTrack.addEventListener('transitionend', () => allowSwipe = true);
 container.addEventListener('touchstart', swipeStart);
 container.addEventListener('mousedown', swipeStart);
 
-
-console.log(dots)
 function setup(){
     let container_width=container.clientWidth;
    
