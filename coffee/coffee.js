@@ -34,7 +34,7 @@ let mockData=[
 
 function renderDesktop(price,image) {
     let str = '';
-    str = `<div class="hover-release-card desktop"><div style="background-image: url(../assets/releaseImage3.jpg)" class="newest-release__card__first">
+    str = `<div class="hover-release-card desktop"><div style="background-image: url(${image})" class="newest-release__card__first">
     <div class="hover-release-card-action">
         <img src="../assets/Heart_icon.svg"/>
         <div>
@@ -68,6 +68,6 @@ console.log(str)
     document.getElementById('card-container').innerHTML += str;
 }
 for(let i = 0 ;i<15;++i){
-renderDesktop();
+renderDesktop(mockData[i].price,mockData[i].image);
 renderMobile();
 }

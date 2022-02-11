@@ -20,12 +20,13 @@
 }
 .footer-copyright{
     padding-bottom: 32px;
+   
 }
 .footer-copyright strong{
-    font-weight: bold;
+    font-weight: 300;
     font-size: 13px;
     line-height: 15px;
-    color: #7B7979;
+    color: #231F20;
 }
 .footer-menu__item{
     margin-top: 24px;
@@ -33,7 +34,7 @@
     cursor: pointer;
     font-size: 15px;
 line-height: 17px;
-
+    
 }
 .footer-menu__item a:hover{
     padding-bottom: 8px;
@@ -41,9 +42,31 @@ line-height: 17px;
 }
 .footer-menu__item a{
    letter-spacing: 0.42em;
+   white-space: nowrap;
+ text-align: right;
 }
-.footer-menu__item a p{
+.footer-menu__item a::after{
+    content: " ";
+    margin-right: -0.42em !important;
+ }
+ .footer-menu__item-two-line p::after{
+    content: " ";
+    margin-right: -0.42em !important;
+ }
+
+.footer-menu__item-two-line p{
     letter-spacing: 0.42em;
+    text-align: left;
+    width: calc(100% - 0.42em);
+ 
+
+ }
+ .footer-menu__item-two-line.terms p{
+    letter-spacing: 0.42em;
+    text-align: left;
+    width: calc(100% - 0.6em);
+ 
+
  }
 .footer-menu__item-social{
     margin-top: 18px;
@@ -106,6 +129,7 @@ hr.footer-hr{
  
 .footer-copyright{
     margin-top: 68px;
+  
 }
 }
 

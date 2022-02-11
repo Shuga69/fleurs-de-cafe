@@ -51,7 +51,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
-    backdrop-filter: blur(14px);
+    backdrop-filter: blur(5px);
 }
 
 
@@ -97,8 +97,9 @@ text-transform: uppercase;
 }
 .main-section__learn-how-to__button{
     margin-top: 24px;
-    width: 143px;
+    
     height: 52px;
+    padding: 17px 16px 18px 16px;
     background-color: #231F20;
     color: #ffffff;
     font-size: 15px;
@@ -141,9 +142,11 @@ text-transform: uppercase;
 .main-section__newsletter__button{
     border: none;
     background: #E3E0D9;
-    width: 131px;
+    padding: 18px 16px 17px 16px;
+
 height: 52px;
 font-size: 15px;
+font-weight: 300;
 text-transform: uppercase;
 cursor: pointer;
 }
@@ -257,16 +260,11 @@ cursor: pointer;
   
   
 .main-section__learn-how-to__button:hover{
-    margin-top: 24px;
-    width: 143px;
-    height: 52px;
+   
+    
     background-color: #231F20;
     color: #ffffff;
-    font-size: 15px;
-    line-height: 17px;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
+   
 }
 .main-section__learn-how-to__button{
     background-color: transparent;
