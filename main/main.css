@@ -185,7 +185,7 @@ cursor: pointer;
 .main-section__slider__image{
     position:absolute;
     width:100%;
-
+    
     top:0%;
     transition:left 0.6s;
 }
@@ -231,6 +231,7 @@ cursor: pointer;
     justify-content: center;
     width: 100%;
   }
+
   .main-section__slider__dots{
     width: 16px;
     height: 16px;
@@ -238,7 +239,7 @@ cursor: pointer;
     border: 1.5px solid #D1D1D1;
     padding: 0px;
     background-color: transparent;
-    margin: 0 5px;
+    margin: 0 10px 0px 0px;
     display: inline-block;
     cursor: pointer;
     transition: 0.5s ease;
@@ -247,6 +248,9 @@ cursor: pointer;
     position: absolute;
     bottom: 20px;
     left: 0;
+  }
+  .line-btn-group:last-child {
+    margin-right: 10px !important;
   }
   .main-section__slider__dots:hover{
     background-color: #717171;
@@ -310,7 +314,12 @@ cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
    
- 
+ .main-section__slider__image.mobileImage{
+    content: url('../assets/slider-mobile1.png');
+    -o-object-fit: none !important;
+    object-fit: none !important;
+    object-position: 0px;
+ }
     .main-section__slider{
         margin-top: 25px;
         
@@ -403,3 +412,65 @@ cursor: pointer;
     }
         
 }
+
+.slider {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 50px auto 0;
+    user-select: none;
+    touch-action: pan-y;
+  }
+  
+  .slider img {
+    pointer-events: none;
+  }
+  
+  .slider-list {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .slider-list.grab {
+    cursor: grab;
+  }
+  
+  .slider-list.grabbing{
+    cursor: grabbing;
+  }
+  
+  .slider-track {
+    display: flex;
+  }
+  
+  .slide {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+  }
+  
+  .slider-arrows {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .next,
+  .prev {
+    background: none;
+    border: none;
+    margin: 0 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .next.disabled,
+  .prev.disabled {
+    opacity: .25;
+    pointer-events: none;
+  }
