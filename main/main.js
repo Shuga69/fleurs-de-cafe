@@ -96,11 +96,12 @@ swipeStart = function() {
   },
 
   swipeEnd = function() {
+     
     posFinal = posInit - posX1;
 
     isScroll = false;
     isSwipe = false;
-   
+  
     document.removeEventListener('touchmove', swipeAction);
     document.removeEventListener('mousemove', swipeAction);
     document.removeEventListener('touchend', swipeEnd);
@@ -141,7 +142,9 @@ swipeStart = function() {
     } else {
       allowSwipe = true;
     }
-    
+    var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+    dots[current_img_index].classList.add('active')
     console.log(current_img_index)
   },
 
@@ -185,28 +188,29 @@ function onLeftButton(){
 
     current_img_index===0?current_img_index=imgs_count-1:--current_img_index;
     slide();
-        
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    dots[current_img_index].classList.add('active')
 }
 
 function onRightButton(){
  
     current_img_index===imgs_count-1?current_img_index=0:current_img_index++;
     slide();
-       
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    dots[current_img_index].classList.add('active')
 }
 
 function onDotsClick(e){
 
     current_img_index= e.target.id-1
     slide();
-
-
-        for(let i=0;i<imgs_count;i++){
             var current = document.getElementsByClassName("active");
             current[0].className = current[0].className.replace(" active", "");
             e.target.classList.add('active')
             
-        }
+        
 
 }
 
