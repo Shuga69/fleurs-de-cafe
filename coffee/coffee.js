@@ -231,7 +231,7 @@ function moreButtonClick(buttons){
         }
         more_button_counter+=4;
         
-        console.log(more_button_counter)
+       
         if(more_button_counter+4>pages_count){
             document.getElementById('more-button').classList.add('disabled')
         }
@@ -248,7 +248,7 @@ function moreButtonClick(buttons){
 function prevMoreButtonClick(buttons){
     
     if(more_button_counter-4>=0){
-        console.log(more_button_counter)
+       
         for (let i = more_button_counter; i<pages_count;++i){
             buttons[i]?.classList.add('disabled')
         }
@@ -264,7 +264,7 @@ function prevMoreButtonClick(buttons){
         if(more_button_counter===0){
             document.getElementById('prev-more-button').classList.add('disabled')
         }
-        console.log(more_button_counter)
+       
         if(more_button_counter===0)
         {
             document.getElementById('prev-button').classList.add('disabled')
@@ -282,7 +282,7 @@ function renderDesktop(meta,mockData) {
     let buttons = document.getElementsByClassName('pagination-group-button')
     current_page = meta.currentPage-1; 
     let current = document.getElementsByClassName("active");
-    console.log(current)
+   
     current[1]?current[1].className = current[1].className.replace("active", ""):null;
    
     buttons[current_page].classList.add('active')
