@@ -3,7 +3,7 @@ let mockData=[
     {id:1, price:"$15.50",image:"../assets/mockImage.png"},
     {id:2,price:"$15.50",image:"../assets/mockImage.png"},
     {id:3,price:"$15.50",image:"../assets/mockImage.png"},
-    {id:4,price:"$15.50",image:"../assets/mockImage.png"},
+   
  
 ]
 
@@ -12,7 +12,7 @@ function renderDesktop(mockData) {
     let str = '';
     
     document.getElementById('card-container').innerHTML = str;
-    for(let i=0;i<5;i++){
+    for(let i=0;i<mockData.length;i++){
 
     str += `<div class="hover-release-card desktop"><div style="background-image: url(${mockData[i].image})" class="newest-release__card__first">
     <div class="hover-release-card-action">
@@ -31,7 +31,7 @@ function renderDesktop(mockData) {
 function renderMobile(mockData) {
     let str = '';
 
-    for(let i=0;i<5;i++){
+    for(let i=0;i<mockData.length;i++){
     str += `<div class="hover-release-card mobile">
     <img width="165px" src="${mockData[i].image}"/>
     <div class="hover-release-card">

@@ -184,9 +184,7 @@
     .main-section__newest-release__card-container{
         display: flex;
     }
-    .main-section__newest-release__card-container div{
-       
-    }
+ 
     .hover-release-card div{
         width: 85%;
         height: max-content;
@@ -206,10 +204,7 @@
           font-size: 12px;
      
     }
-    .hover-release-card div img{
-      
-     
-    }
+ 
     .hover-release-card {
         width: 100% !important;
         height: 100% !important;
