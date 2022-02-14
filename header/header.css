@@ -23,7 +23,11 @@
     width: 115px;
     cursor: pointer;
 }
+.header-container{
 
+  width:min(69.58%,1336px);
+  margin: 0 auto;
+}
 .search-button{
   border: none;
   background: none;
@@ -88,6 +92,15 @@
     border-bottom: 1px solid #231F20;
   
   }
+  .menu-list-item.active-menu{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #231F20;
+  
+  }
+  .menu-list-item.active-menu a:hover{
+    border-bottom: none;
+  
+  }
   .menu-list-item.active a:hover{
    
     border-bottom: none;
@@ -119,7 +132,11 @@
 
 @media only screen and (max-width: 768px) {
  
+  .header-container{
 
+    width:min(92%,1109px);
+    margin: 0 auto;
+  }
  .upper-header__text-mobile{
      font-size: 13px;
      text-align: center;

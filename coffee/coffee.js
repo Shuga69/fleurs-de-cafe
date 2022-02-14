@@ -1,13 +1,23 @@
-let mockData=[
-    {id:0, price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:1, price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:2,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:3,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:4,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:5,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:6,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:7,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:8,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+const mockData=[
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:4,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:5,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:6,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:8,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:9,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:8,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:25,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:26,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:27,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:28,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
+    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:31,price:"$15.50",image:`../assets/releaseImage3.jpg`},
     {id:9,price:"$15.50",image:"../assets/releaseImage3.jpg"},
     {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
     {id:11,price:"$15.50",image:"../assets/releaseImage3.jpg"},
@@ -23,7 +33,37 @@ let mockData=[
     {id:21,price:"$15.50",image:"../assets/releaseImage3.jpg"},
     {id:22,price:"$15.50",image:"../assets/releaseImage3.jpg"},
     {id:23,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:24,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:4,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:5,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:6,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:26,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:27,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
+    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:4,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:5,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:6,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:8,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:9,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:8,price:"$15.50",image:"../assets/mockImage3.png"},
     {id:25,price:"$15.50",image:"../assets/releaseImage3.jpg"},
     {id:26,price:"$15.50",image:"../assets/releaseImage3.jpg"},
     {id:27,price:"$15.50",image:"../assets/releaseImage3.jpg"},
@@ -31,54 +71,221 @@ let mockData=[
     {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
     {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
     {id:31,price:"$15.50",image:`../assets/releaseImage3.jpg`},
+    {id:9,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:11,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:12,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:13,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:14,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:15,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:16,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:17,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:18,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:19,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:20,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:21,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:22,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:23,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:4,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:5,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:6,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:26,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:27,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
+    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
+    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
+    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
+    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
+    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
 ]
 
-let elements_per_page = 6;
+let elements_per_page = 15;
 let pages_count = Math.ceil(mockData.length/elements_per_page);
+let current_page = 0;
+let more_button_counter = 0;
 
 function renderButton(pages_count, mockData ){
    let str='';
-   let current_page = 0
-  
+   let prevButton = `<button id="prev-button" class="pagination-group-button-arrow left disabled"><img src="../assets/right-button-arrow.svg"/></button>`
+   
     for (let i =1; i<=pages_count;++i){
-        str+=`<button id="pagination-group-button" class="pagination-group-button">${i}</button>`   
+        if(i<=4)
+        str+=`<button id="pagination-group-button " class="pagination-group-button">${i}</button>`  
+        else
+        str+=`<button id="pagination-group-button" class="pagination-group-button disabled">${i}</button>`  
     }
+    let prevMorePageButton = `<button id="prev-more-button" class="pagination-group-button-dots left disabled">...</button>`;
     
+    let morePageButton = `<button id="more-button" class="pagination-group-button-dots">...</button>`;
     let nextButton = `<button id="next-button" class="pagination-group-button-arrow"><img src="../assets/right-button-arrow.svg"/></button>`
+    document.getElementById('pagination-group').innerHTML += prevButton
+    document.getElementById('pagination-group').innerHTML += prevMorePageButton
     document.getElementById('pagination-group').innerHTML += str
+    document.getElementById('pagination-group').innerHTML += morePageButton
     document.getElementById('pagination-group').innerHTML += nextButton
+  
     let buttons = document.getElementsByClassName('pagination-group-button')
     let meta = pagination(mockData.length-1,1,elements_per_page,pages_count);
     renderDesktop(meta, mockData)
     renderMobile(meta,mockData)
-    document.getElementById('next-button').addEventListener('click', ()=>{
-        console.log(meta.currentPage!==meta.totalPages)
-        if(meta.currentPage!==meta.totalPages){
 
-        meta = pagination(mockData.length,meta.nextPage,elements_per_page,pages_count)
+    document.getElementById('prev-more-button').addEventListener('click', ()=>{
+        prevMoreButtonClick(buttons)
+        current_page=more_button_counter;
+        meta = pagination(mockData.length,current_page+1,elements_per_page,pages_count)
+        renderDesktop(meta,mockData)
+        let current = document.getElementsByClassName("active");
+        current[1].className = current[1].className.replace("active", "");
+        buttons[current_page].classList.add('active')
+    }
+         ,false)
+    document.getElementById('more-button').addEventListener('click', ()=>{
+        moreButtonClick(buttons);
+        current_page=more_button_counter;
+        meta = pagination(mockData.length,current_page+1,elements_per_page,pages_count)
+        renderDesktop(meta,mockData)
+        renderMobile(meta,mockData)
+        let current = document.getElementsByClassName("active");
+        current[1].className = current[1].className.replace("active", "");
+        buttons[current_page].classList.add('active')
+    }
+         ,false)
+
+  document.getElementById('prev-button').addEventListener('click', ()=>{
+       if(current_page<=more_button_counter)
+       prevMoreButtonClick(buttons)
+        if(current_page!==meta.totalPages){
+        meta = pagination(mockData.length,current_page,elements_per_page,pages_count)
         renderDesktop(meta,mockData,true)
-        console.log("next "+meta.currentPage)
-        }
-        else meta=pagination(mockData.length,meta.currentPage,elements_per_page,pages_count); renderDesktop(meta,mockData,true);
-        }
+        renderMobile(meta,mockData)
+        }   
+    }
+        ,false)
+    document.getElementById('next-button').addEventListener('click', ()=>{
+      
+       if(current_page+1>=more_button_counter+4)
+       moreButtonClick(buttons);
+        if(current_page!==meta.totalPages){
+        meta = pagination(mockData.length,current_page+2,elements_per_page,pages_count)
+        renderDesktop(meta,mockData,true)
+        renderMobile(meta,mockData)
+        }   
+    }
         ,false)
   
     for(let i =1;i<=pages_count;++i)
     {
         let meta = pagination(mockData.length,i,elements_per_page,pages_count)
-        buttons[current_page].addEventListener("click",()=>{renderDesktop(meta,mockData); console.log("num "+meta.currentPage); renderMobile(meta,mockData)} , false)
+        buttons[current_page].addEventListener("click",()=>{renderDesktop(meta,mockData); renderMobile(meta,mockData)} , false)
         current_page++;
         
     }
+    current_page=0;
 }
-function renderDesktop(meta,mockData,next) {
+function moreButtonClick(buttons){
+
+    if(more_button_counter+4<pages_count){
+        for (let i = more_button_counter+8; i<pages_count;++i){
+            buttons[i]?.classList.add('disabled')
+        }
+        for (let i = more_button_counter+4; i<more_button_counter+8;++i){
+            buttons[i]?.classList.remove('disabled')
+        }
+        for (let i = more_button_counter; i<more_button_counter+4;++i){
+            buttons[i]?.classList.add('disabled')
+        }
+        more_button_counter+=4;
+        
+        console.log(more_button_counter)
+        if(more_button_counter+4>pages_count){
+            document.getElementById('more-button').classList.add('disabled')
+        }
+       
+        if(more_button_counter>0)
+        {
+            document.getElementById('prev-button').classList.remove('disabled')
+        }
+        if(more_button_counter+4>4){
+            document.getElementById('prev-more-button').classList.remove('disabled')
+        }
+}
+}
+function prevMoreButtonClick(buttons){
+    
+    if(more_button_counter-4>=0){
+        console.log(more_button_counter)
+        for (let i = more_button_counter; i<pages_count;++i){
+            buttons[i]?.classList.add('disabled')
+        }
+        for (let i = more_button_counter-4; i<more_button_counter;++i){
+            buttons[i]?.classList.remove('disabled')
+        }
+        for (let i = more_button_counter; i<more_button_counter-4;++i){
+            buttons[i]?.classList.add('disabled')
+        }
+
+        more_button_counter-=4;
+       
+        if(more_button_counter===0){
+            document.getElementById('prev-more-button').classList.add('disabled')
+        }
+        console.log(more_button_counter)
+        if(more_button_counter===0)
+        {
+            document.getElementById('prev-button').classList.add('disabled')
+        }
+        if(more_button_counter>0){
+            document.getElementById('prev-more-button').classList.remove('disabled')
+        }
+        if(more_button_counter+4<pages_count){
+            document.getElementById('more-button').classList.remove('disabled')
+        }
+}
+}
+function renderDesktop(meta,mockData) {
     let str = '';
     let buttons = document.getElementsByClassName('pagination-group-button')
-    
+    current_page = meta.currentPage-1; 
     let current = document.getElementsByClassName("active");
-  
-    current[1].className = current[1].className.replace("active", "");
-    buttons[meta.currentPage-1].classList.add('active')
+    console.log(current)
+    current[1]?current[1].className = current[1].className.replace("active", ""):null;
+   
+    buttons[current_page].classList.add('active')
     
     document.getElementById('card-container').innerHTML = str;
     for(let i=meta.startIndex;i<meta.endIndex;i++){
@@ -97,6 +304,7 @@ function renderDesktop(meta,mockData,next) {
 
     document.getElementById('card-container').innerHTML += str;
 }
+
 function renderMobile(meta,mockData) {
     let str = '';
     let buttons = document.getElementsByClassName('pagination-group-button')
