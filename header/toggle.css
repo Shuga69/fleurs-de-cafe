@@ -66,6 +66,15 @@
         text-align: center;
         text-transform: uppercase;
     }
+    .side-drawer__navigation-link.active a{
+        border-bottom: 1px solid #231F20;
+    }
+    .side-drawer__navigation-link a::after{
+        content:" ";
+      
+       margin-right: -0.22em;
+      
+      }
     .side-drawer__navigation-link a:hover{
        border-bottom: 1px solid #231F20;
     }

@@ -132,19 +132,32 @@ const mockData=[
     {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
     {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
     {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
+    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
+    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
+    
 ]
 
 let elements_per_page = 15;
 let pages_count = Math.ceil(mockData.length/elements_per_page);
 let current_page = 0;
 let more_button_counter = 0;
-
+let button_per_page = 4;
+if (window.screen.width <= 768 ) {
+    button_per_page = 3;
+  }
+ if (window.screen.width <= 320 ) {
+    button_per_page = 2;
+  }
 function renderButton(pages_count, mockData ){
    let str='';
    let prevButton = `<button id="prev-button" class="pagination-group-button-arrow left disabled"><img src="../assets/right-button-arrow.svg"/></button>`
    
     for (let i =1; i<=pages_count;++i){
-        if(i<=4)
+        if(i<=button_per_page)
         str+=`<button id="pagination-group-button " class="pagination-group-button">${i}</button>`  
         else
         str+=`<button id="pagination-group-button" class="pagination-group-button disabled">${i}</button>`  
@@ -198,7 +211,7 @@ function renderButton(pages_count, mockData ){
         ,false)
     document.getElementById('next-button').addEventListener('click', ()=>{
       
-       if(current_page+1>=more_button_counter+4)
+       if(current_page+1>=more_button_counter+button_per_page)
        moreButtonClick(buttons);
         if(current_page!==meta.totalPages){
         meta = pagination(mockData.length,current_page+2,elements_per_page,pages_count)
@@ -219,20 +232,20 @@ function renderButton(pages_count, mockData ){
 }
 function moreButtonClick(buttons){
 
-    if(more_button_counter+4<pages_count){
-        for (let i = more_button_counter+8; i<pages_count;++i){
+    if(more_button_counter+button_per_page<pages_count){
+        for (let i = more_button_counter+button_per_page*2; i<pages_count;++i){
             buttons[i]?.classList.add('disabled')
         }
-        for (let i = more_button_counter+4; i<more_button_counter+8;++i){
+        for (let i = more_button_counter+button_per_page; i<more_button_counter+button_per_page*2;++i){
             buttons[i]?.classList.remove('disabled')
         }
-        for (let i = more_button_counter; i<more_button_counter+4;++i){
+        for (let i = more_button_counter; i<more_button_counter+button_per_page;++i){
             buttons[i]?.classList.add('disabled')
         }
-        more_button_counter+=4;
+        more_button_counter+=button_per_page;
         
        
-        if(more_button_counter+4>pages_count){
+        if(more_button_counter+button_per_page>=pages_count){
             document.getElementById('more-button').classList.add('disabled')
         }
        
@@ -240,31 +253,29 @@ function moreButtonClick(buttons){
         {
             document.getElementById('prev-button').classList.remove('disabled')
         }
-        if(more_button_counter+4>4){
+        if(more_button_counter+button_per_page>button_per_page){
             document.getElementById('prev-more-button').classList.remove('disabled')
         }
 }
 }
 function prevMoreButtonClick(buttons){
     
-    if(more_button_counter-4>=0){
+    if(more_button_counter-button_per_page>=0){
        
         for (let i = more_button_counter; i<pages_count;++i){
             buttons[i]?.classList.add('disabled')
         }
-        for (let i = more_button_counter-4; i<more_button_counter;++i){
+        for (let i = more_button_counter-button_per_page; i<more_button_counter;++i){
             buttons[i]?.classList.remove('disabled')
         }
-        for (let i = more_button_counter; i<more_button_counter-4;++i){
+        for (let i = more_button_counter; i<more_button_counter-button_per_page;++i){
             buttons[i]?.classList.add('disabled')
         }
-
-        more_button_counter-=4;
+        more_button_counter-=button_per_page;
        
         if(more_button_counter===0){
             document.getElementById('prev-more-button').classList.add('disabled')
         }
-       
         if(more_button_counter===0)
         {
             document.getElementById('prev-button').classList.add('disabled')
@@ -272,7 +283,7 @@ function prevMoreButtonClick(buttons){
         if(more_button_counter>0){
             document.getElementById('prev-more-button').classList.remove('disabled')
         }
-        if(more_button_counter+4<pages_count){
+        if(more_button_counter+button_per_page<pages_count){
             document.getElementById('more-button').classList.remove('disabled')
         }
 }

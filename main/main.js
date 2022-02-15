@@ -207,13 +207,8 @@ function onDotsClick(e){
             var current = document.getElementsByClassName("active");
             current[0].className = current[0].className.replace(" active", "");
             e.target.classList.add('active')
-            
-        
-
 }
-
 setup();
-
 function onToggle(){
     let element = document.getElementById('toggle-menu')
     let toggleButton = document.getElementsByClassName('toggle-line')
@@ -232,3 +227,24 @@ function onToggle(){
 
 
 
+
+var video = document.getElementById("videoModal");
+
+var btnVideo = document.getElementById("videoButton");
+
+var exit = document.getElementsByClassName("close")[0];
+
+btnVideo.onclick = function() {
+  video.style.display = "block";
+ 
+}
+exit.onclick = function() {
+  video.style.display = "none";
+}
+
+video.onclick = function(event) {
+  if (event.target == video) {
+    video.style.display = "none";
+  }
+  console.log("asdasd")
+}

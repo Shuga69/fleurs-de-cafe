@@ -183,6 +183,7 @@
     }
     .main-section__newest-release__card-container{
         display: flex;
+        justify-content: space-between;
     }
  
     .hover-release-card div{
@@ -196,6 +197,7 @@
           margin-left: 7.5px;
      
     }
+   
     .add-btn{
         font-weight: 400;
     }
@@ -205,15 +207,13 @@
      
     }
  
-    .hover-release-card {
-        width: 100% !important;
-        height: 100% !important;
-    }
+  
     .hover-release-card.mobile{
         display: flex !important;
+   
         flex-direction: column;
         margin-top: 28px;
-        width: 47% !important;
+        width: 165px;
         height: max-content !important;
     }
     .hover-release-card div p{
@@ -222,5 +222,17 @@
     }
     .hover-release-card div p:last-child{
         width: 100%;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .hover-release-card.mobile{
+       
+        width: 140px;
+       
+    }
+    .hover-release-card.mobile img{
+       
+        width: 140px;
+       
     }
 }

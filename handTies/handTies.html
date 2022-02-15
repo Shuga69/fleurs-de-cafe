@@ -17,10 +17,12 @@
     <div class="upper-header desktop">
         <div class="search">
             <button class="search-button"><img src="../assets/Search_icon.svg"/></button>
-            <input class="search-input" type="search"/>
-        </div>
-             <p class="upper-header__text">Free shipping on order $ 59 + | CODE: GRATEFUL</p>
-        
+            <input id="search-input" class="search-input" type="search"/>
+        </div>  
+            <div id="header-coupon" class="upper-header__coupon" >
+                <p class="upper-header__text">Free shipping on order $ 59 + | CODE: GRATEFUL </p>
+                <img onclick="closeCoupon()" src="../assets/Exit_icon.svg"/>
+            </div>
          <div class="upper-header__images">
              <img src="../assets/Heart_icon.svg"/>
              <img src="../assets/User.svg"/>
@@ -31,22 +33,33 @@
      </div>
      <div class="upper-header mobile">
         <div class="main-section-icons-mobile">
-         <img src="../assets/Search_icon.svg"/>
+         <div class="search">
+             <button id="myBtn" class="search-button"><img src="../assets/Search_icon.svg"/></button>
+             <div id="myModal" class="modal">
+                 <div class="modal-content">
+                     <img src="../assets/Search_icon.svg"/>
+                     <input id="search-input" class="search-input" type="search"/>
+                 </div>
+             </div>
+         </div>  
          <div class="upper-header__images">
              <img src="../assets/Heart_icon.svg"/>
              <img src="../assets/User.svg"/>
              <img src="../assets/Bag_icon.svg"/>
          </div>
      </div>
-         <p class="upper-header__text-mobile">Free shipping on order $ 59 + | CODE: GRATEFUL</p>
-        
+         
+         <div id="header-coupon" class="upper-header__coupon" >
+             <p class="upper-header__text-mobile">Free shipping on order $ 59 + | CODE: GRATEFUL <img onclick="closeCoupon()" src="../assets/Exit_icon.svg"/></p>
+             
+         </div>
      </div>
       <!-- -------------- -->
       <div id="toggle-menu" class="toggle-menu">
         <div class="container">
         <div class="toggle-menu__inner">
         <div class="side-drawer-main-logo">
-            <img width="100%" height="100%" src="../assets/logo.svg"/>
+            <a href="../main/main.html"><img width="100%" height="100%" src="../assets/logo.svg"/></a>
             <button id="toggle-btn" class="toggle-btn" onclick="onToggle()">
                 <span id="toggle-line" class="toggle-line"></span>
                 <span id="toggle-line" class="toggle-line"></span>
@@ -79,7 +92,7 @@
     <div class="header-container">
         
         <div class="main-logo">
-           <a style="width:44%; height:44%" href="../main/main.html"><img width="100%" height="100%" src="../assets/logo.svg"/></a>
+           <a href="../main/main.html"><img width="100%" height="100%" src="../assets/logo.svg"/></a>
             <button id="toggle-btn" class="toggle-btn" onclick="onToggle()">
                 <span id="toggle-line" class="toggle-line-mobile"></span>
                 <span id="toggle-line" class="toggle-line-mobile"></span>

@@ -1,0 +1,273 @@
+
+  
+  .slider-coffee-container {
+    position: relative;
+    width: 50%;
+    user-select: none;  
+  }
+  
+  .mySlides {
+    display: none;
+  }
+
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 36%;
+    width: auto;
+    padding: 16px;
+   
+    display: flex;
+    align-items: center;
+
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  .demo {
+    opacity: 0.6;
+  }
+  .next{
+  
+    transform: rotateY(180deg);
+}
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+  .coffee-product__inner{
+      display: flex;
+      justify-content: space-between;
+  }
+  .description-container{
+      width: 47%;
+  }
+  .coffee-country{
+      text-transform: uppercase;
+      font-size: 15px;
+      color: #4F4C4D;
+      line-height: 15px;
+      margin-bottom: 20px;
+  }
+  .coffee-product-title{
+    text-transform: uppercase;
+    font-size: 32px;
+    line-height: 36.36px;
+    margin-bottom: 16px;
+  }
+  .coffee-product-price{
+    font-size: 32px;
+    line-height: 32px;
+  }
+.coffee-size-container{
+    margin-top: 24px;
+}
+  .size-title{
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .coffee-box-container{
+    display: flex;
+    justify-content: space-between;
+   
+  }
+  .coffee-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 47%;
+      padding: 20px 0px;
+      margin-top: 16px;
+  }
+  .coffee-box:first-child{
+    border: 1px solid #D1D1D1;
+}
+.coffee-box:last-child{
+    background: #E3E0D9;
+}
+.coffee-box.grind:first-child{
+    background: #E3E0D9 ;
+
+}
+.coffee-box.grind:last-child{
+    border: 1px solid #D1D1D1;
+    background: none;
+}
+  .coffee-box-price{
+      font-weight: 400;
+      letter-spacing: 0px;
+     
+  }
+  .coffee-size{
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #4F4C4D;
+    margin-top: 12px;
+  }
+  .coffee-size.grind{
+    font-size: 15px ;
+    font-weight: 400;
+  }
+  .coffee-description{
+    font-size: 14px;
+    line-height: 21px;
+    color: #4F4C4D;
+    width: 50%;
+    text-align: center;
+    margin-top: 12px;
+    letter-spacing: 0px;
+  }
+
+  .coffee-roast-level-container{
+      margin-top: 24px;
+  }
+  .roast-slider-container{
+    display: flex;
+    justify-content: space-between;
+    width: 82%;
+    margin-top: 21px;
+  }
+  .roast-slider-container p{
+    font-size: 15px;
+    letter-spacing: 0px;
+  }
+  .roast-indicator{
+    background: linear-gradient(270deg, #747A65 0%, #B1BB9B 100%);
+    width: 70%;
+    height: 12px;
+  }
+  .roast-indicator::after{
+    content: "6";
+    width: 100%;
+    left: 50%;
+    position: relative;
+    top: 29px;
+  }
+  .roast-indicator::before{
+    content: url("../../assets/Indicator.svg");
+    
+    position: relative;
+    bottom: 13px;
+    left: 55%;
+  }
+
+  .coffee-quontity-container{
+      margin-top: 53px;
+  
+  }
+  .coffee-button-container{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .coffee-quontity-buttons{
+      display: flex;
+  }
+  .coffee-quontity-button{
+      height: 42px;
+      width: 44px;
+      background-color: #FFFFFF;
+      border: 1px solid #D1D1D1;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+  }
+  .coffee-quontity-button:hover{
+    background-color: #231F20;
+    cursor: pointer;
+   
+}
+.coffee-quontity-button:hover > .minus{
+    content: url('../../assets/Minus_iconWhite.svg');
+}
+.coffee-quontity-button:hover > .plus{
+    content: url('../../assets/Plus_iconWhite.svg');
+}
+  .coffee-quontity-input{
+      width: 58px;
+      height: 42px;
+      background-color: #FFFFFF;
+      border: 1px solid #D1D1D1;
+        letter-spacing: 0px;
+      text-align: center;
+      
+  }
+
+  .coffee-button-container{
+    display: flex;
+  }
+  .coffee-quontity-add-button{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 0px;
+      width: 350px;
+      height: 42px;
+      background-color: #ffffff;
+      border: 1px solid #231F20;
+      cursor: pointer;
+  }
+  .coffee-quontity-add-button:hover{
+    background-color: #231F20;
+    border: 1px solid #231F20;
+    color: #FFFFFF;
+}
+.coffee-quontity-add-button:hover > .add{
+    color: #FFFFFF;
+}
+  .coffee-quontity-add-button p{
+    font-size: 15px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-left: 13px;
+}
+.coffee-quontity-add-button:hover > img{
+    content: url('../../assets/addCartWhite.svg');
+}
