@@ -380,10 +380,7 @@ cursor: pointer;
 }
 @media only screen and (max-width: 768px) {
     .video-content {
-     
         top: 50%;
-  
-  
     }
  .main-section__slider__image.mobileImage{
     content: url('../assets/slider-mobile1.png');
@@ -393,22 +390,17 @@ cursor: pointer;
  }
     .main-section__slider{
         margin-top: 25px;
-        
     }
     
      .main-section__learn-how-to__text-container{
          width: 92%;
-        
      }
    
      .main-section__learn-how-to__image{
         width: 92%;
-      
         margin-top: 52px;
-        
     }
     .main-section__learn-how-to__image img{
- 
         -o-object-fit: cover;
         object-fit: cover;
     }
@@ -428,7 +420,6 @@ cursor: pointer;
 }
 .main-section__slider__image{
    height: 375px !important;
-   
    -o-object-fit:cover;
       object-fit:cover;
       object-position: -260px;

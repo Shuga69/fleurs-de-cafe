@@ -10,6 +10,7 @@
 .upper-header.mobile{
   padding: 12px 18px;
 }
+
 .upper-header__text{
     color: #231F20;
     line-height: 15px;
@@ -159,9 +160,16 @@
      margin-top: 13px;
      text-transform: uppercase;
      line-height: 19.5px;
+     
       
  }
-
+.upper-header__text-mobile img{
+  position: relative;
+    top: 2px;
+}
+.upper-header__coupon{
+  justify-content: center;
+}
  .upper-header__coupon.disabled{
    display: none;
  }
@@ -219,4 +227,12 @@
     height: 22px;
   }
 
+}
+@media only screen and (max-width: 320px) {
+  .upper-header__text-mobile{
+    font-size: 11px;
+   
+    
+     
+}
 }

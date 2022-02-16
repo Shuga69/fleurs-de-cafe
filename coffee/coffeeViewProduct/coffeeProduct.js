@@ -36,5 +36,10 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
+}
 
+function onCheckGrind(){
+  var current = document.getElementsByClassName("grind ");
+  current[0].className = current[0].className.replace(" active", "");
+  document.getElementById('grind').classList.add("active")
 }
