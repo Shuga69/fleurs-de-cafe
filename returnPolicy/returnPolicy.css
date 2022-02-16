@@ -1,0 +1,43 @@
+.policy-container{
+   
+    width:min(39%,730px);
+    margin: 0 auto;
+}
+.policy-text-container{
+    margin-top: 20px;
+}
+.return-policy-title{
+    font-size: 32px;
+    line-height: 36.36px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.policy-subtitle{
+    letter-spacing: 0;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 32px;
+    line-height: 22.5px;
+}
+.policy-text{
+    letter-spacing: 0;
+    color: #4E4C4D;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+.policy-text a{
+    letter-spacing: 0;
+    color: #3176F5;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 22.5px;
+}
+.policy-subtitle-text{
+    letter-spacing: 0;
+    margin-top: 32px;
+    font-weight: 400;
+    color: #4E4C4D;
+    line-height: 22.5px;
+}
+/* 32 */
