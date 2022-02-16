@@ -1,0 +1,228 @@
+.bag__title{
+    font-size: 32px;
+
+line-height: 36.36px;
+text-transform: uppercase;
+}
+.product-card-container{
+    margin-top: 50px;
+    display: flex;
+    margin-bottom: 34px;
+}
+.bag-container{
+    width: 74.4%;
+    min-width: 671px;
+}
+.product-card__text{
+    margin-left: 30px;
+    width: 100%;
+}
+.product-card-top-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.product-remove-button{
+    display: flex;
+    align-items: center;
+}
+.product-remove-button p{
+    letter-spacing: 0;
+   margin-left: 12px;
+   font-size: 15px;
+}
+.coffee-quontity-container{
+    margin-top: 16px;
+  }
+  .coffee-button-container{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .coffee-quontity-buttons{
+      display: flex;
+  }
+  .coffee-quontity-button{
+      height: 42px;
+      width: 44px;
+      background-color: #FFFFFF;
+      border: 1px solid #D1D1D1;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+  }
+  .coffee-quontity-button:hover{
+    background-color: #231F20;
+    cursor: pointer;
+   
+}
+.coffee-quontity-button:hover > .minus{
+    content: url('../assets/Minus_iconWhite.svg');
+}
+.coffee-quontity-button:hover > .plus{
+    content: url('../assets/Plus_iconWhite.svg');
+}
+  .coffee-quontity-input{
+      width: 58px;
+      height: 42px;
+      background-color: #FFFFFF;
+      border: 1px solid #D1D1D1;
+        letter-spacing: 0px;
+      text-align: center;
+      
+  }
+
+  .size-title{
+    font-size: 14px;
+    line-height: 100%;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  .product-card-order-description{
+      margin-top: 18px;
+      font-size: 15px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #4F4C4D;
+  }
+  .product-card-price{
+    margin-top: 16px;
+    letter-spacing: 0;
+    font-size: 20px;
+  }
+  .product-card-total{
+      margin-top: 24px;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 14px;
+  }
+  .product-card-total-price{
+    margin-top: 12px;
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0;
+}
+hr.product-card-hr{
+    margin-top: 16px;
+    margin-bottom: 32px;
+    border-top: 1px solid #EEEEEE; 
+}
+.bag__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.total-container{
+    width: 23.08%;
+    min-width: 200px;
+}
+.subtotal,
+.total-saving{
+    display: flex;
+    justify-content: space-between;
+
+}
+.total-saving{
+    margin-top: 16px;
+}
+.total-saving p{
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0;
+}
+.subtotal p{
+    font-size: 20px;
+line-height: 23px;
+font-weight: 400;
+letter-spacing: 0;
+}
+.description-text-area{
+    width: 100%;
+    margin-top: 16px;
+}
+.product-card-buttons{
+    margin-top: 24px;
+    
+}
+.button{
+    margin-top: 16px;
+    cursor: pointer;
+}
+.button.checkout{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D1D1D1;
+    border: none;
+}
+.button.checkout div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+}
+.button.checkout p{
+    font-size: 15px;
+    line-height: 17px;
+    text-transform: uppercase;
+    margin-left: 14px;
+}
+.button.shop-pay{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3D26EB;
+    border: none;
+}
+.button.apple-pay{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #231F20;
+    border: none;
+}
+.button.paypal{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEC349;
+    border: none;
+}
+.continue-shopping{
+    font-size: 15px;
+    line-height: 17px;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.button.shopping{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+}
+@media only screen and (max-width: 940px) {
+    .total-container{
+        width: 100%;
+        min-width: 0;
+    }
+    .bag-container{
+        width: 100%;
+        min-width: 0px;
+        margin-top: 24px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .product-card.mobile div{
+        margin-top: 16px;
+    }
+   
+}

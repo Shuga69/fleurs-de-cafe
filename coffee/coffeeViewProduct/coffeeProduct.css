@@ -2,7 +2,7 @@
   
   .slider-coffee-container {
     position: relative;
-    width: 50%;
+    width: 48.5%;
     min-width:375px;
     user-select: none;  
   }
@@ -89,7 +89,7 @@
       flex-wrap: wrap;
   }
   .description-container{
-      width: 47%;
+      width: 49.1%;
   }
   .coffee-country{
       text-transform: uppercase;
@@ -107,6 +107,7 @@
   .coffee-product-price{
     font-size: 32px;
     line-height: 32px;
+    letter-spacing: 0;
   }
 .coffee-size-container{
     margin-top: 24px;
@@ -430,10 +431,12 @@ text-transform: uppercase;
   .coffee-quontity-add-button{
     margin-top: 24px;
   }
- 
+ .also-like-title{
+   text-align: center;
+ }
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 420px) {
   .main-section__newest-release__card-container div {
       width: 100%;
   }

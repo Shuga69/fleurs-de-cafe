@@ -1,0 +1,10 @@
+.coffee-quontity-container.tea{
+    margin-top: 24px;
+}
+.coffee-box.tea .coffee-description{
+    width: 80%;
+}
+.coffee-size.tea{
+    font-size: 16px;
+    font-weight: 400;
+}

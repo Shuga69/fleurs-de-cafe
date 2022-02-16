@@ -1,7 +1,43 @@
 let slideIndex = 1;
 let quontity = 1;
 let quontityInput = document.getElementById('quontity-input')
+let slides = document.getElementById('slides')
+var startX
+var startY
+var endX
+var endY
+var treshold = 10000;
 showSlides(slideIndex);
+
+function handleTouch(start,end, cbL, cbR){
+ 
+  var xDist = endX - startX;
+  var yDist = endY - startY;
+
+   if(endX - startX <= 0){
+   
+    plusSlides(1)
+    }else{
+      plusSlides(-1)
+    }
+}
+
+slides.addEventListener('touchstart', function(event){
+
+  startX = event.touches[0].clientX;
+  startY = event.touches[0].clientY;
+ 
+  
+})
+ 
+slides.addEventListener('touchend', function(event){
+
+  endX = event.changedTouches[0].clientX;
+  endY = event.changedTouches[0].clientY;
+   
+  handleTouch(startX, endX)
+  
+})
 
 function plusSlides(n) {
   showSlides(slideIndex += n);

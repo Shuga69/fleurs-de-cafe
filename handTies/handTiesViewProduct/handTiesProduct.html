@@ -6,20 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLEURS DE CAFÈ</title>
     <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="./handTiesProduct.css">
     <link rel="stylesheet" href="../../header/header.css">
     <link rel="stylesheet" href="../../header/toggle.css">
     <link rel="stylesheet" href="../../footer/footer.css">
+    <link rel="stylesheet" href="../../coffee/coffeeViewProduct/coffeeProduct.css">
     <link rel="stylesheet" href="../../fonts/GillSans/fonts.css">
 </head>
 <body>
     <div class="upper-header desktop">
         <div class="search">
-            <button class="search-button"><img src="../assets/Search_icon.svg"/></button>
+            <button class="search-button"><img src="../../assets/Search_icon.svg"/></button>
             <input id="search-input" class="search-input" type="search"/>
         </div>  
             <div id="header-coupon" class="upper-header__coupon" >
                 <p class="upper-header__text">Free shipping on order $ 59 + | CODE: GRATEFUL </p>
-                <img onclick="closeCoupon()" src="../assets/Exit_icon.svg"/>
+                <img onclick="closeCoupon()" src="../../assets/Exit_icon.svg"/>
             </div>
          <div class="upper-header__images">
              <img src="../../assets/Heart_icon.svg"/>
@@ -32,23 +34,23 @@
      <div class="upper-header mobile">
         <div class="main-section-icons-mobile">
          <div class="search">
-             <button id="myBtn" class="search-button"><img src="../assets/Search_icon.svg"/></button>
+             <button id="myBtn" class="search-button"><img src="../../assets/Search_icon.svg"/></button>
              <div id="myModal" class="modal">
                  <div class="modal-content">
-                     <img src="../assets/Search_icon.svg"/>
+                     <img src="../../assets/Search_icon.svg"/>
                      <input id="search-input" class="search-input" type="search"/>
                  </div>
              </div>
          </div>  
          <div class="upper-header__images">
-             <img src="../assets/Heart_icon.svg"/>
-             <img src="../assets/User.svg"/>
-             <img src="../assets/Bag_icon.svg"/>
+             <img src="../../assets/Heart_icon.svg"/>
+             <img src="../../assets/User.svg"/>
+             <img src="../../assets/Bag_icon.svg"/>
          </div>
      </div>
          
          <div id="header-coupon" class="upper-header__coupon" >
-             <p class="upper-header__text-mobile">Free shipping on order $ 59 + | <img onclick="closeCoupon()" src="../assets/Exit_icon.svg"/><br/> CODE: GRATEFUL </p>
+             <p class="upper-header__text-mobile">Free shipping on order $ 59 + | <img onclick="closeCoupon()" src="../../assets/Exit_icon.svg"/><br/> CODE: GRATEFUL </p>
              
          </div>
      </div>
@@ -57,7 +59,7 @@
          <div class="container">
          <div class="toggle-menu__inner">
          <div class="side-drawer-main-logo">
-            <a href="../main/main.html"><img width="100%" height="100%" src="../../assets/logo.svg"/></a>
+            <a href="../../main/main.html"><img width="100%" height="100%" src="../../assets/logo.svg"/></a>
              <button id="toggle-btn" class="toggle-btn" onclick="onToggle()">
                  <span id="toggle-line" class="toggle-line"></span>
                  <span id="toggle-line" class="toggle-line"></span>
@@ -112,9 +114,135 @@
          </header>
      </div>
             <!-- -------------- -->
-          
+            <div class="container">
+                <div class="coffee-product__inner">
+                <div class="slider-coffee-container">
+                    <div id="slides" class="slides-container">
+                    <a class="prev" onclick="plusSlides(-1)"><img src="../../assets/coffee-product-arrow.svg"/></a>
+                    <a class="next" onclick="plusSlides(1)"><img src="../../assets/coffee-product-arrow.svg"/></a>
+                    <div class="mySlides">
+                      <img src="../../assets/coffeeProductSlide1.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <img src="../../assets/coffeeProductSlide2.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <img src="../../assets/coffeeProductSlide3.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <img src="../../assets/coffeeProductSlide1.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <img src="../../assets/coffeeProductSlide2.png" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                      <img src="../../assets/coffeeProductSlide3.png" style="width:100%">
+                    </div>
+                    </div>
+                    <div class="row">
+                      <div class="column">
+                        <img class="demo cursor" src="../../assets/coffeeProductSlide1.png" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="../../assets/coffeeProductSlide2.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="../../assets/coffeeProductSlide3.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="../../assets/coffeeProductSlide1.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="../../assets/coffeeProductSlide2.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                      </div>    
+                      <div class="column">
+                        <img class="demo cursor" src="../../assets/coffeeProductSlide3.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                      </div>
+                    </div>
+                  </div>
+                 
             <!-- -------------- -->
+            <div class="description-container">
+                <div class="product-title-container">
+                    <h3 class="coffee-product-title">Pastel Flowers bouqet</h3>
+                    <p class="coffee-product-price">$15.50</p>
+                </div>
+                <div class="delivery-container">
+                    
+                <div class="delivery-buttons">
+                    <input id="delivery-1" checked class="radio-delivery" type="radio" name="delivery"/>
+                    <input id="delivery-2" class="radio-delivery" type="radio" name="delivery"/>
+                    <label for="delivery-1" id="delivery" class="coffee-box flower delivery-1">
+                        <p class="coffee-box-price">DELIVERY</p>
+                    </label>
+                    <label for="delivery-2" id="delivery" class="coffee-box flower delivery-2">
+                        <p class="coffee-box-price">PICK UP</p>
+                    </label>
+                </div>
+                <div class="delivery-date">
+                    <input placeholder="Select date" type="text" onfocus="(this.type='date')" class="delivery-date-input" />
+                    
+                </div>
+                </div>
+                <div class="coffee-size-container">
+                    <p class="size-title">
+                        SIZE
+                    </p>
+                    <div class="coffee-box-container flower">
+                        <input id="size-1" checked class="radio-size" type="radio" name="size"/>
+                        <input id="size-2" class="radio-size" type="radio" name="size"/>
+                        <input id="size-3" class="radio-size" type="radio" name="size"/>
 
+                        <label for="size-1" id="size" class="coffee-box flower size-1">
+                            <p class="coffee-box-price">$15.50</p>
+                            <p class="coffee-size flower">original</p>
+                            <p class="coffee-description flower">15 Mixed Stems A Classic-sized Bouq</p>
+                        </label>
+                        <label for="size-2" id="size" class="coffee-box flower size-2">
+                            <p class="coffee-box-price">$35.50</p>
+                            <p class="coffee-size flower">Deluxe</p>
+                            <p class="coffee-description flower">24 Mixed Stems A Classic-sized Bouq</p>
+                        </label>
+                        <label for="size-3" id="size" class="coffee-box flower size-3">
+                            <p class="coffee-box-price">$15.50</p>
+                            <p class="coffee-size flower">graund</p>
+                            <p class="coffee-description flower">36 Mixed Stems A Classic-sized Bouq</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="coffee-quontity-container">
+                    <p class="size-title">
+                        Quontity
+                    </p>
+                    <div class="coffee-button-container">
+                        <div class="coffee-quontity-buttons">
+                            <button onclick="minusQuontity()" class="coffee-quontity-button"><img class="minus" src="../../assets/Minus_icon.svg"/></button>
+                            <input onchange="changeQuolity()" id="quontity-input" class="coffee-quontity-input" value="1"/>
+                            <button onclick="addQuontity()" class="coffee-quontity-button"><img class="plus" src="../../assets/Plus_icon.svg"/></button>
+                        </div>
+                        <button class="coffee-quontity-add-button"><img src="../../assets/addCart.svg"/><p class="add">Add to Cart</p></button>
+                        
+                    </div>
+                    </div>
+
+            </div>
+
+            <!-- -------------- -->
+        </div>
+    </div>
+    <div class="also-like">
+        <div class="container">
+                <div class="main-section__newest-release">
+                    <h3 class="also-like-title">May you also like</h3>
+                    <div class="main-section__newest-release__card-container">
+                        <div class="newest-release__card__first"><div class="hover-release-card-action"><div><p>$15.50</p><p>Dark city</p></div><p>ADD TO CART</p></div></div>
+                        <div class="newest-release__card__second"><div class="hover-release-card-action"><div><p>$15.50</p><p>Dark city</p></div><p>ADD TO CART</p></div></div>
+                        <div class="newest-release__card__third"><div class="hover-release-card-action"><div><p>$15.50</p><p>Dark city</p></div><p>ADD TO CART</p></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
      <footer class="footer">
         <div class="container">
             <div class="footer__inner">
@@ -153,6 +281,7 @@
     </div>
     </footer>
      <script src="../../header/header.js"></script>
+     <script src="../../coffee/coffeeViewProduct/coffeeProduct.js"></script>
     
    
 </body>

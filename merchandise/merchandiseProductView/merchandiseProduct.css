@@ -1,0 +1,36 @@
+.coffee-quontity-container.merchandise{
+    margin-top: 24px;
+}
+.merchandise-box{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 16px;
+    margin-top: 16px;
+}
+.merchandise-box.color-1{
+    background-color: #FFFFFF;
+    border: 1px solid #D1D1D1;
+    margin-left: 0px;
+}
+.merchandise-box.color-2{
+    background-color: #888C52;
+    border: 1px solid #D1D1D1;
+}
+.merchandise-box.color-3{
+    background-color: #30373B;
+    border: 1px solid #D1D1D1;
+}
+.coffee-box-container.merchandise{
+    justify-content: flex-start;
+}
+input[type="radio"]{
+    display: none;
+  }
+#color-1:checked:checked ~ .color-1,
+#color-2:checked:checked ~ .color-2,
+#color-3:checked:checked ~ .color-3{
+
+    border: 1px solid #231F20;
+  }
+
