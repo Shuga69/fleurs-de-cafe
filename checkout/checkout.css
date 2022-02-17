@@ -28,7 +28,7 @@ margin-right: 10px;
     padding-right: 30px;
 }
 .checkout-container{
-
+    margin-top: 52px;
     width: 59.34%;
     display: flex;
     justify-content: center;
@@ -272,4 +272,85 @@ line-height: 17px;
 }
 .checkout-section{
     display: flex;
+}
+.gift-container-form{
+
+    width: 49%;
+    margin-left: 30px;
+    margin-top: 52px;
+}
+.gift-container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gift-title{
+    margin-left: 20px;
+    font-size: 20px;
+line-height: 23px;
+}
+.gift-price{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+hr.gift-hr{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 1px solid #DCDAD6; 
+}
+.gift-code-input{
+    width: 80%;
+    height: 48px;
+    background: transparent;
+    padding-left: 16px;
+    border: 1px solid #DCDAD6;
+    letter-spacing: 0;
+    color: #A7A5A6;
+}
+.gift-code-button{
+    width: 20%;
+    height: 48px;
+    background-color: #231F20;
+    color: #FFFFFF;
+    border: none;
+    font-size: 15px;
+line-height: 17px;
+}
+.gift-code-container{
+    display: flex;
+}
+.gift-subtotal{
+    display: flex;
+
+    justify-content: space-between;
+}
+.gift-shipping{
+    display: flex;
+
+    margin-top: 24px;
+    justify-content: space-between;
+}
+.gift-subtotal-title,
+.gift-shipping-title{
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0;
+}
+.gift-subtotal-price,
+.gift-shipping-price{
+    font-size: 16px;
+line-height: 18px;
+letter-spacing: 0;
+}
+.gift-total-title,
+.gift-total-price{
+    font-size: 20px;
+line-height: 23px;
+letter-spacing: 0;
+font-weight: 400;
+}
+.gift-total{
+    display: flex;
+    justify-content: space-between;
 }

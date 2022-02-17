@@ -5,14 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLEURS DE CAFÈ</title>
-    
+    <link rel="stylesheet" href="./wishlist.css">
     <link rel="stylesheet" href="../index.css">
-    <link rel="stylesheet" href="./returnPolicy.css">
     <link rel="stylesheet" href="../header/header.css">
     <link rel="stylesheet" href="../header/toggle.css">
     <link rel="stylesheet" href="../footer/footer.css">
     <link rel="stylesheet" href="../fonts/GillSans/fonts.css">
-    
+   
 </head>
 <body>
     <div class="upper-header desktop">
@@ -71,7 +70,7 @@
             <ul class="toggle-menu-list">
                 <li class="side-drawer__navigation-link "><a href="../handTies/handTies.html">Hand – Ties</a></li>
                 <li class="side-drawer__navigation-link"><a href="../coffee/coffee.html">Coffee</a></li>
-                <li class="side-drawer__navigation-link active"><a href="../teaTime/teaTime.html">Tea Time</a></li>
+                <li class="side-drawer__navigation-link"><a href="../teaTime/teaTime.html">Tea Time</a></li>
                 <li class="side-drawer__navigation-link"><a href="../merchandise/merchandise.html">Merchandise</a></li>
                 <li class="side-drawer__navigation-link"><a>About</a></li>
             </ul>
@@ -105,33 +104,23 @@
         <header class="header">
             <nav class="menu">
                 <ul class="menu-list">
-                    <li class="menu-list-item "><a href="../handTies/handTies.html">Hand – Ties</a></li>
+                    <li class="menu-list-item"><a href="../handTies/handTies.html">Hand – Ties</a></li>
                     <li class="menu-list-item"><a href="../coffee/coffee.html">Coffee</a></li>
-                    <li class="menu-list-item active"><a href="../teaTime/teaTime.html">Tea Time</a></li>
+                    <li class="menu-list-item"><a href="../teaTime/teaTime.html">Tea Time</a></li>
                     <li class="menu-list-item"><a href="../merchandise/merchandise.html">Merchandise</a></li>
                     <li class="menu-list-item"><a>About</a></li>
                 </ul>
             </nav>
         </header>
     </div>
-         <!-- -------------- -->
-        <div class="policy-container">
-            <h2 class="return-policy-title">Return policy</h2>
-            <div class="policy-text-container">
-                <p style="margin-top:0px" class="policy-subtitle">Returns & Refunds on Non-Consumables</p>
-                <p style="margin-top:32px" class="policy-text">We greatly appreciate your business. If for any reason you are not satisfied with your purchase, it can be returned within 15 days and a refund will be issued to the original payment method. Returns are processed as a refund of the original purchase price. Merchandise must be unused, unopened and in its original packaging. <strong class="policy-text strong">Buyer is responsible for return shipping costs.</strong> If you need to return an item, please contact us for a Return Reference Number at <a>orders@fleursdecaf.com</a></p>
-                <p class="policy-subtitle">Flower Order Return/Cancellation Policy</p>
-                <p class="policy-subtitle-text">WE CANNOT OFFER REFUNDS ON OUR BOUQUETS.</p>
-                <p style="margin-top:32px" class="policy-text">Flower orders may be cancelled if notice is given 24 hours in advance of the pick-up/delivery date of the order. All flower cancellations made before the 24 hour deadline are eligible for store-credit only. Flower orders being cancelled within 12 hours of being placed (but not within the 24 hour pick-up/delivery date) are eligible for a full refund. </p>
-                <p class="policy-subtitle">Coffee and Tea Returns</p>
-                <p style="margin-top:10px" class="policy-text">Unfortunately, we cannot offer refunds on coffee beans or tea, unless there was an issue such as a damaged delivery. Express shipping where applicable is none refunded. Please contact us so we can work together to resolve the issue. Please contact our Customer Service Team at orders@fleursdecaf.com</p>
-                <p class="policy-subtitle">What do I do if my order is incomplete, incorrect or damaged?</p>
-                <p style="margin-top:10px" class="policy-text">Time is of the essence. If you receive your order and notice the order is damaged, you must contact us within 24 hours for an exchange. No exchanges or returns will be accepted after 24 hours.</p>
-                <p class="policy-subtitle">Sale Items and Gift Cards</p>
-                <p style="margin-top:10px" class="policy-text">Unfortunately, we cannot accept returns on sale items or gift cards.</p>
+        <!-- -------------- -->
+        <div class="container">
+            <h2 class="wish-title">My hearts wishlist</h2>
+            <div id="wish-container" class="wish__inner">
+                
             </div>
         </div>
-    
+
         <!-- -------------- -->
          <footer class="footer">
             <div class="container">
@@ -171,6 +160,6 @@
         </div>
         </footer>
         <script src="../header/header.js"></script>
-       
+        <script src="./wishlist.js"></script>
 </body>
 </html>

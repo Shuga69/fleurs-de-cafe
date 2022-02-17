@@ -40,4 +40,7 @@
     color: #4E4C4D;
     line-height: 22.5px;
 }
+.policy-text.strong{
+    font-weight: 500;
+}
 /* 32 */
