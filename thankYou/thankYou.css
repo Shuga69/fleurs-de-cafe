@@ -1,0 +1,166 @@
+.thank-container{
+    width:min(39%,730px);
+    margin: 0 auto;
+}
+.thank-title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.thank-title{
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 41.6px;
+    text-transform: uppercase;
+}
+.thank-subtitle{
+    color: #636363;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0;
+    margin-top: 16px;
+}
+.go-to-home-button{
+    margin-top: 24px;
+    background: #050505;
+    text-align: center;
+    width: 210px;
+    height: 48px;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.thank-order-container{
+    margin-top: 72px;
+}
+.order-title{
+    color: #050505;
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.order-product{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.order-product-text{
+    margin-left: 15px;
+}
+.order-product-title{
+    font-size: 20px;
+line-height: 23px;
+text-transform: uppercase;
+}
+.order-product-subtitle{
+    font-size: 15px;
+line-height: 22.5px;
+text-transform: uppercase;
+color: #4F4C4D;
+margin-top: 17px;
+}
+.order-product-price{
+    font-size: 20px;
+    margin-top: 16px;
+}
+.subtotal-container{
+    margin-top: 30px;
+    margin-bottom: 29px;
+}
+.order-shipping{
+    margin-top: 24px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.order-subtotal{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.order-subtotal-title{
+    font-size: 16px;
+line-height: 18px;
+letter-spacing: 0;
+}
+.order-subtotal-price{
+    font-size: 16px;
+line-height: 18px;
+font-weight: 400;
+letter-spacing: 0;
+}
+hr.thank-hr{
+    border-top: 1px solid #DCDAD6; 
+}
+.order-product-total{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 28px;
+}
+.total-title{
+    font-size: 20px;
+line-height: 23px;
+font-weight: 400;
+letter-spacing: 0;
+}
+.total-price{
+    font-size: 20px;
+line-height: 23px;
+font-weight: 400;
+letter-spacing: 0;
+}
+.delivery-option{
+    display: flex;
+}
+.delivery-container{
+    margin-top: 30px;
+}
+.delivery-text-container{
+    width: 33.3%;
+    
+
+  
+    margin-top: 24px;
+    margin-left: 45px;
+}
+
+.delivery-title{
+    color: #05050580;
+    font-size: 15px;
+    letter-spacing: 0;
+}
+.delivery-text{
+    font-size: 15px;
+    margin-top: 16px;
+    color: #050505;
+    letter-spacing: 0;
+    line-height: 22.5px;
+   
+}
+@media only screen and (max-width: 1200px) {
+    .thank-container{
+        width:min(79%,730px);
+        margin: 0 auto;
+    }
+    .thank-container{
+        margin-top: 25px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .thank-container{
+        width:min(92%,1109px);
+        margin-top: 25px;
+    }
+    .delivery-text-container{
+        width: 50%;
+       margin: 0;
+       margin-top: 24px;
+    }
+    .delivery-option{
+        flex-wrap: wrap;
+    }
+}
