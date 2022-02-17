@@ -69,6 +69,8 @@ text-transform: uppercase;
       border: 1px solid #D1D1D1;
         letter-spacing: 0px;
       text-align: center;
+      border-left: none;
+      border-right: none;
       
   }
 
