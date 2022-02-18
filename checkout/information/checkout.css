@@ -234,7 +234,21 @@ line-height: 17px;
   .checkout-email-input.select.shipping{
       background: #FFFFFF;
       width: 31.5%;
+      background: url("../../assets/selectArrow.svg");
+      background-repeat: no-repeat;
+      background-position:95%;   
+    
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      text-indent: 1px;
+      text-overflow: '';  
   }
+  .checkout-email-input.select.shipping.zip{
+      background: none;
+  }
+  select::-ms-expand {
+    display: none;
+}
   .checkout-email-input-select-container{
       display: flex;
       justify-content: space-between;
@@ -274,6 +288,7 @@ line-height: 17px;
 .checkout-section{
     display: flex;
 }
+
 .gift-container-form{
 
     width: 49%;
@@ -443,6 +458,7 @@ font-weight: 400;
     }
     .checkout-email-input.select.shipping{
         width: 100%;
+       
     }
     .checkout-email-input-select-container{
         flex-direction: column;

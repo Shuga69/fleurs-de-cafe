@@ -12,3 +12,6 @@ function addQuontity(){
 function changeQuolity(){
     quontity = quontityInput.value
 }
+
+
+

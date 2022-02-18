@@ -1,144 +1,40 @@
 const mockData=[
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:4,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:5,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:6,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:8,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:9,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:8,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:25,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:26,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:27,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:28,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:31,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:9,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:11,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:12,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:13,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:14,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:15,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:16,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:17,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:18,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:19,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:20,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:21,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:22,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:23,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:4,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:5,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:6,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:26,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:27,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:4,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:5,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:6,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:8,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:9,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:8,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:25,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:26,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:27,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:28,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:31,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:9,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:11,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:12,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:13,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:14,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:15,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:16,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:17,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:18,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:19,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:20,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:21,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:22,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:23,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:4,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:5,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:6,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:7,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:26,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:27,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:10,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:2,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:3,price:"$15.50",image:"../assets/mockImage3.png"},
-    {id:29,price:"$15.50",image:`../assets/releaseImage3.jpg`},
-    {id:30,price:"$15.50",image:"../assets/releaseImage3.jpg"},
-    
+    {id:0, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:1, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:2, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:3, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:4, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:5, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:6, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:7, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:8, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:9, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:10, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:11, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:12, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:13, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:14, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:15, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:16, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:17, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:18, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:19, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:20, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:21, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:22, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:23, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:24, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:25, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:26, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:27, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:28, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:29, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:30, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:31, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:32, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:33, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:34, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:35, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
 ]
 
 let elements_per_page = 15;
@@ -301,18 +197,20 @@ function renderDesktop(meta,mockData) {
     document.getElementById('card-container').innerHTML = str;
     for(let i=meta.startIndex;i<meta.endIndex;i++){
 
-    str += `<div class="hover-release-card desktop"><div style="background-image: url(${mockData[i].image})" class="newest-release__card__first">
+    str += `<div class="hover-release-card desktop"><div id="card-image" style="background-image: url(${mockData[i].image})" class="newest-release__card__first">
     <div class="hover-release-card-action">
-        <img src="../assets/Heart_icon.svg"/>
+        <button id="add-to-wishlist" class="add-to-wishlist"><img src="../assets/Heart_icon.svg"/></button>
         <div>
-            <p>${mockData[i].price}</p>
-            <p>Dark city</p>    
+            <p id="card-price">${mockData[i].price}</p>
+            <p id="card-title">${mockData[i].title}</p>    
         </div>
         <p>ADD TO CART</p>
     </div>
 </div></div>`
+        
     }
-
+   
+   
     document.getElementById('card-container').innerHTML += str;
 }
 
@@ -327,11 +225,11 @@ function renderMobile(meta,mockData) {
 
     for(let i=meta.startIndex;i<meta.endIndex;i++){
     str += `<div class="hover-release-card mobile">
-    <img width="165px" src="${mockData[i].image}"/>
+    <button id="add-to-wishlist"> <img width="165px" src="${mockData[i].image}"/></button>
     <div class="hover-release-card">
         <div>
             <p>${mockData[i].price}</p>
-            <p>Dark city</p>
+            <p>${mockData[i].title}</p>    
             <p class="add-btn">ADD TO CART</p> 
         </div>
     </div>
@@ -393,3 +291,22 @@ function pagination(
             nextPage: nextPage
         };
     }
+
+
+
+    function addToWishList(){
+        
+        let addWishButtons = document.getElementsByClassName('add-to-wishlist')
+    
+        for(let item of addWishButtons){
+           
+            item.addEventListener("click",function(event){
+                let wishElemnet = event.target.parentElement.parentElement;
+                console.log(wishElemnet[0])
+                // let text = wishElemnet.getElementById('card-price').innerText
+              
+        })
+    }
+  
+    }
+    addToWishList()
