@@ -2,6 +2,7 @@
    
     width:min(39%,730px);
     margin: 0 auto;
+    margin-top: 52px;
 }
 .policy-text-container{
     margin-top: 20px;
@@ -42,5 +43,16 @@
 }
 .policy-text.strong{
     font-weight: 500;
+    color: #231F20;
 }
-/* 32 */
+.policy-subtitle-text.shipping{
+     color: #231F20;
+}
+@media only screen and (max-width: 768px) {
+    .policy-container{
+   
+       width: 92%;
+        margin: 0 auto;
+        margin-top: 52px;
+    }
+}

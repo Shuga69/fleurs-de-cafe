@@ -1,3 +1,5 @@
+
+
 function onToggle(){
     let element = document.getElementById('toggle-menu')
     let toggleButton = document.getElementsByClassName('toggle-line')
@@ -25,9 +27,6 @@ function searchClick(){
     search.style.transition = "all 500ms cubic-bezier(0, 0.110, 0.35, 2)";
 }
 
-
-
-
 var modal = document.getElementById("myModal");
 
 var btn = document.getElementById("myBtn");
@@ -37,10 +36,24 @@ var span = document.getElementsByClassName("close")[0];
 btn.onclick = function() {
   modal.style.display = "block";
 }
-
-
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
+
+
+const searchList = document.getElementById('search-container');
+const searchBar = document.getElementById('search-input');
+let hpCharacters = [];
+
+searchBar.addEventListener('keyup', (e) => {
+  
+  if (event.keyCode === 13) {
+    const searchString = e.target.value.toLowerCase();
+    window.location.href = `../searchResult/searchResult.html?search=${searchString}`;     
+    }
+      
+  
+});
+

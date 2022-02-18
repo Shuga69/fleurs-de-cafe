@@ -1,0 +1,31 @@
+.go-to-home-button{
+    margin-top: 24px;
+    background: #050505;
+    text-align: center;
+    width: 210px;
+    height: 48px;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.error__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 72px;
+}
+.error-title{
+    font-size: 32px;
+    line-height: 37px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-top: 32px;
+}
+.error-text{
+    color: #636363;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    margin-top: 16px;
+}
