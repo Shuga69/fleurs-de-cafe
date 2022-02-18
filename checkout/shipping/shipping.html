@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEURS DE CAFÈ</title>
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="./shipping.css">
+    <link rel="stylesheet" href="../information/checkout.css">
+    <link rel="stylesheet" href="../../footer/footer.css">
+    <link rel="stylesheet" href="../../fonts/GillSans/fonts.css">
+    
+</head>
+<body>
+    <div class="checkout-section">
+        <div class="checkout-left-form">
+            <div class="checkout-container">
+                <img class="desktop" width="487px" src="../../assets/logo.svg"/>
+                <div class="tabs-container">
+                    <p class="next-tab">Cart</p>
+                    <img src="../../assets/next-tab.svg"/>
+                    <p class="next-tab">Information</p>
+                    <img src="../../assets/next-tab.svg"/>
+                    <p class="next-tab active">Shipping</p>
+                    <img src="../../assets/next-tab.svg"/>
+                    <p class="next-tab">Payment</p>
+                </div>
+
+                <div class="checkout-info-container">
+                    <div class="checkout-info contact">
+                        <div class="checkout-info-text-container">
+                        <p class="checkout-info-text">Contact</p>
+                        <p class="checkout-info-value">sample@gmail.com</p>
+                    </div>
+                        <p class="checkout-info-text">Change</p>
+                    </div>
+                    <div class="checkout-info ship">
+                        <div class="checkout-info-text-container">
+                        <p class="checkout-info-text">Ship to</p>
+                        <p class="checkout-info-value"></p>
+                        </div>
+                        <p class="checkout-info-text">Change</p>
+                    </div>
+                    <div class="checkout-info method">
+                        <div class="checkout-info-text-container">
+                        <p class="checkout-info-text">Method</p>
+                        <p class="checkout-info-value">First Class Package -<strong> $4.5</strong></p>
+                        </div>
+                        <p class="checkout-info-text">Change</p>
+                    </div>
+                </div>
+
+                <div class="shipping-remember-container">
+                    <h3 class="shipping-remember-title">Remember me</h3>
+                    <div class="coffee-box-container">
+                       
+                        <label class="remember-radio">
+                            <input type="radio" checked="checked" name="remember"/>
+                            <span class="checkmark"></span>
+                            <div class="remember-radio-container">
+                               
+                                <div class="remember-radio-text">
+                                    <p class="remember-radio-title">USPS First Class Package</p>
+                                    <p class="remember-radio-duration">3 business day</p>
+                                </div>
+                                <p class="remember-radio-price">$4.50</p>
+                            </div>
+                        </label>
+                       
+                        <label class="remember-radio">
+                            <input type="radio" name="remember"/>
+                            <span class="checkmark"></span>
+                            <div class="remember-radio-container">
+                                
+                                <div class="remember-radio-text">
+                                    <p class="remember-radio-title">USPS First Class Package</p>
+                                    <p class="remember-radio-duration">3 business day</p>
+                                </div>
+                                <p class="remember-radio-price">$4.50</p>
+                            </div>
+                        </label>
+
+                        <label class="remember-radio">
+                            <input type="radio"name="remember"/>
+                            <span class="checkmark"></span>
+                            <div class="remember-radio-container">
+                                
+                                <div class="remember-radio-text">
+                                    <p class="remember-radio-title">USPS First Class Package</p>
+                                    <p class="remember-radio-duration">3 business day</p>
+                                </div>
+                                <p class="remember-radio-price">$4.50</p>
+                            </div>
+                        </label>
+                        
+                    </div>
+                </div>
+
+                <div class="checkout-button-container">
+                    <button class="continue-shipping">CONTINUE TO PAYMENT</button>
+                    <button class="return-to-card">Return to cart</button>
+                </div>
+                
+                <hr class="footer-hr mini">
+                <div class="footer-copyright">
+            
+                    <p>Copyright 2021 © FLEURS DE CAF<nobr>È</nobr> LLC. | Development by <strong>Rivo Agency</strong></p>
+                    <p class="footer-copyright__bottom">All Rights Reserve</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- -------------- -->
+        <div id="drop-down" class="checkout-right-form shipping">
+            <div class="gift-container-form">
+                <div class="gift-container-title">
+                    <img width="64px" height="64px" src="../../assets/releaseImage3.jpg"/>
+                    <h2 class="gift-title">CAMPOS SUPERIOR BLEND</h2>
+                    <p class="gift-price">$31.00</p>
+                </div>
+                <hr class="gift-hr"/>
+                <div class="gift-code-container">
+                    <input placeholder="Gift card or discount code" class="gift-code-input"/>
+                    <button class="gift-code-button">APPLY</button>
+                </div>
+                <hr class="gift-hr"/>
+                <div class="gift-subtotal">
+                    <p class="gift-subtotal-title">Subtotal</p>
+                    <p class="gift-subtotal-price">$31.00</p>
+                </div>
+                <div class="gift-shipping">
+                    <p class="gift-shipping-title">Shipping</p>
+                    <p class="gift-shipping-price">Calculated at next step</p>
+                </div>
+                <hr class="gift-hr"/>
+                <div class="gift-total">
+                    <p class="gift-total-title">Total</p>
+                    <p class="gift-total-price">$31.00</p>
+                </div>
+            </div>
+        </div>
+        <div  class="drop-down-summary checkout-drop-mobile">
+            <div class="drop-down-summary-text">
+                <img src="../../assets/Bag_icon.svg"/>
+                <p class="drop-down-summary-description">Show order summary</p>
+                <button onclick="openDrop()" class="drop-down-summary-button"><img id="arrow-drop" src="../../assets//drop-down-icon.svg"/></button>
+            </div>
+            <p class="drop-down-summary-price">$72.50</p>
+        </div>
+        <img class="checkout-mobile" width="100%" src="../../assets/logo.svg"/>
+
+    </div>
+    <script src="../information/checkout.js"></script>
+</body>
+</html>

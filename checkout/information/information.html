@@ -5,31 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FLEURS DE CAFÈ</title>
-    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../../index.css">
     <link rel="stylesheet" href="./checkout.css">
-    <link rel="stylesheet" href="../footer/footer.css">
-    <link rel="stylesheet" href="../fonts/GillSans/fonts.css">
+    <link rel="stylesheet" href="../../footer/footer.css">
+    <link rel="stylesheet" href="../../fonts/GillSans/fonts.css">
     
 </head>
 <body>
     <div class="checkout-section">
+        
         <div class="checkout-left-form">
             <div class="checkout-container">
-                <img width="487px" src="../assets/logo.svg"/>
+                <img class="desktop" width="487px" src="../../assets/logo.svg"/>
                 <div class="tabs-container">
                     <p class="next-tab">Cart</p>
-                    <img src="../assets/next-tab.svg"/>
+                    <img src="../../assets/next-tab.svg"/>
                     <p class="next-tab active">Information</p>
-                    <img src="../assets/next-tab.svg"/>
+                    <img src="../../assets/next-tab.svg"/>
                     <p class="next-tab">Shipping</p>
-                    <img src="../assets/next-tab.svg"/>
+                    <img src="../../assets/next-tab.svg"/>
                     <p class="next-tab">Payment</p>
                 </div>
                 <fieldset class="express-checkout">
                     <legend class="express-checkout-label">Express checkout</legend>
-                    <button class="button shop-pay"><img src="../assets/shopPay-icon.svg"/></button>
-                    <button class="button apple-pay"><img src="../assets/applePay-icon.svg"/></button>
-                    <button class="button paypal"><img src="../assets/payPal-icon.svg"/></button>
+                    <button class="button shop-pay"><img src="../../assets/shopPay-icon.svg"/></button>
+                    <button class="button apple-pay"><img src="../../assets/applePay-icon.svg"/></button>
+                    <button class="button paypal"><img src="../../assets/payPal-icon.svg"/></button>
                 
                 </fieldset>
                 <hr class="express-hr"/>
@@ -362,7 +363,7 @@
                     <input class="checkout-email-input shipping" placeholder="Phone" type="tel"/>
                     <div class="checkout-button-container">
                         <button class="continue-shipping">CONTINUE TO SHiPPING</button>
-                        <button class="return-to-card">Return to card</button>
+                        <button class="return-to-card">Return to cart</button>
                     </div>
                 </form>
                 <hr class="footer-hr mini">
@@ -375,10 +376,11 @@
 
         </div>
         <!-- -------------- -->
-        <div class="checkout-right-form">
+      
+        <div id="drop-down" class="checkout-right-form">
             <div class="gift-container-form">
                 <div class="gift-container-title">
-                    <img width="64px" height="64px" src="../assets/releaseImage3.jpg"/>
+                    <img width="64px" height="64px" src="../../assets/releaseImage3.jpg"/>
                     <h2 class="gift-title">CAMPOS SUPERIOR BLEND</h2>
                     <p class="gift-price">$31.00</p>
                 </div>
@@ -403,7 +405,17 @@
                 </div>
             </div>
         </div>
+        <div  class="drop-down-summary checkout-drop-mobile">
+            <div class="drop-down-summary-text">
+                <img src="../../assets/Bag_icon.svg"/>
+                <p class="drop-down-summary-description">Show order summary</p>
+                <button onclick="openDrop()" class="drop-down-summary-button"><img id="arrow-drop" src="../../assets//drop-down-icon.svg"/></button>
+            </div>
+            <p class="drop-down-summary-price">$72.50</p>
+        </div>
+        <img class="checkout-mobile" width="100%" src="../../assets/logo.svg"/>
 
     </div>
+    <script src="./checkout.js"></script>
 </body>
 </html>
