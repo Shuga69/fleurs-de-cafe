@@ -16,7 +16,7 @@ function renderDesktop(mockData) {
 
     str += `<div class="hover-release-card desktop"><div style="background-image: url(${mockData[i].image})" class="newest-release__card__first">
     <div class="hover-release-card-action">
-        <img src="../assets/Heart_icon.svg"/>
+    <button id="add-to-wishlist" class="add-to-wishlist"><img src="../assets/Heart_icon.svg"/></button>
         <div>
             <p>${mockData[i].price}</p>
             <p>thermo mug</p>    

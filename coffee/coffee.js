@@ -1,11 +1,11 @@
 const mockData=[
-    {id:0, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
-    {id:1, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
-    {id:2, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
-    {id:3, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
-    {id:4, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
-    {id:5, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
-    {id:6, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:0, price:"$9.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:1, price:"$12.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:2, price:"$16.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:3, price:"$14.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:4, price:"$13.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:5, price:"$11.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    {id:6, price:"$10.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
     {id:7, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
     {id:8, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
     {id:9, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
@@ -204,7 +204,7 @@ function renderDesktop(meta,mockData) {
             <p id="card-price">${mockData[i].price}</p>
             <p id="card-title">${mockData[i].title}</p>    
         </div>
-        <p>ADD TO CART</p>
+        <p id="add-cart-button" class="add-btn">ADD TO CART</p>
     </div>
 </div></div>`
         
@@ -225,12 +225,12 @@ function renderMobile(meta,mockData) {
 
     for(let i=meta.startIndex;i<meta.endIndex;i++){
     str += `<div class="hover-release-card mobile">
-    <button id="add-to-wishlist"> <img width="165px" src="${mockData[i].image}"/></button>
+    <button id="add-to-wishlist"> <img id="card-image" width="165px" src="${mockData[i].image}"/></button>
     <div class="hover-release-card">
         <div>
             <p>${mockData[i].price}</p>
             <p>${mockData[i].title}</p>    
-            <p class="add-btn">ADD TO CART</p> 
+            <p id="add-cart-button" class="add-btn">ADD TO CART</p> 
         </div>
     </div>
     </div>`
@@ -293,20 +293,78 @@ function pagination(
     }
 
 
-
-    function addToWishList(){
-        
-        let addWishButtons = document.getElementsByClassName('add-to-wishlist')
     
+    function addToWishList(){
+
+        let addWishButtons = document.getElementsByClassName('add-to-wishlist')
+        JSON.parse(window.localStorage.getItem('wish-card'))? wishList = JSON.parse(window.localStorage.getItem('wish-card')):wishList=[];
+        
+        document.getElementById('wish-counter').innerText = wishList.length
+     
         for(let item of addWishButtons){
            
             item.addEventListener("click",function(event){
-                let wishElemnet = event.target.parentElement.parentElement;
-                console.log(wishElemnet[0])
-                // let text = wishElemnet.getElementById('card-price').innerText
+                let wishElemnet = event.target.parentElement.parentElement.parentElement.parentElement;
+                let price = wishElemnet.querySelector('#card-price').innerText
+                let title = wishElemnet.querySelector('#card-title').innerText
               
+                let img = wishElemnet.querySelector('#card-image')
+                style = img.currentStyle || window.getComputedStyle(img, false),
+                image = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+             
+                const wishCard = {
+                    title:title,
+                    price:price,
+                    image:image
+                }
+               
+                wishList.push(wishCard)
+           
+                wishList.length?document.getElementById('wish-counter').style.display = 'flex':document.getElementById('wish-counter').style.display = 'none'
+             
+                window.localStorage.setItem('wish-card',JSON.stringify(wishList))
+                document.getElementById('wish-counter').innerText = JSON.parse(window.localStorage.getItem('wish-card')).length
+                console.log(window.localStorage.getItem('wish-card'))
         })
     }
   
     }
+
+    // function addToCart(){
+
+    //     window.localStorage.clear()
+    //     let addCartButtons = document.getElementsByClassName('add-cart-button')
+    //     JSON.parse(window.localStorage.getItem('wish-card'))? wishList = JSON.parse(window.localStorage.getItem('wish-card')):wishList=[];
+        
+    //     document.getElementById('wish-counter').innerText = wishList.length
+     
+    //     for(let item of addWishButtons){
+           
+    //         item.addEventListener("click",function(event){
+    //             let wishElemnet = event.target.parentElement.parentElement.parentElement.parentElement;
+    //             let price = wishElemnet.querySelector('#card-price').innerText
+    //             let title = wishElemnet.querySelector('#card-title').innerText
+              
+    //             let img = wishElemnet.querySelector('#card-image')
+    //             style = img.currentStyle || window.getComputedStyle(img, false),
+    //             image = style.backgroundImage.slice(4, -1).replace(/"/g, "");
+             
+    //             const wishCard = {
+    //                 title:title,
+    //                 price:price,
+    //                 image:image
+    //             }
+               
+    //             wishList.push(wishCard)
+           
+    //             wishList.length?document.getElementById('wish-counter').style.display = 'flex':document.getElementById('wish-counter').style.display = 'none'
+             
+    //             window.localStorage.setItem('wish-card',JSON.stringify(wishList))
+    //             document.getElementById('wish-counter').innerText = JSON.parse(window.localStorage.getItem('wish-card')).length
+    //             console.log(window.localStorage.getItem('wish-card'))
+    //     })
+    // }
+  
+    // }
+
     addToWishList()

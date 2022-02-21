@@ -140,7 +140,26 @@
   cursor: pointer;
 
 }
+.wish-count{
+  position: relative;
+  bottom: 40px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 65%;
+  border-radius: 50%;
+  letter-spacing: 0;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  width: 18px;
+  height: 18px;
+  background-color: #FBBC04;
+}
+.upper-header__images a{
+  height: 24px;
+}
 .main-section-icons-mobile{
   display: flex;
   justify-content: space-between;
