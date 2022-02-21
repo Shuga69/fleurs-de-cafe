@@ -225,7 +225,7 @@ function renderMobile(meta,mockData) {
 
     for(let i=meta.startIndex;i<meta.endIndex;i++){
     str += `<div class="hover-release-card mobile">
-    <button id="add-to-wishlist"> <img id="card-image" width="165px" src="${mockData[i].image}"/></button>
+    <button class="add-to-wishlist" id="add-to-wishlist"> <img id="card-image" width="165px" src="${mockData[i].image}"/></button>
     <div class="hover-release-card">
         <div>
             <p>${mockData[i].price}</p>

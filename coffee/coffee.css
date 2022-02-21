@@ -65,6 +65,10 @@
     height: 18px;
     background-color: #FBBC04;
 }
+.add-to-wishlist{
+    background: none;
+    border: none;
+}
 .hover-release-card-action:hover{
     opacity: 1;
     display: flex;
