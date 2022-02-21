@@ -48,7 +48,8 @@
 .card-back{
     position: absolute;
 }
-.wish-count{
+.wish-count,
+.cart-count{
     position: relative;
     bottom: 40px;
 

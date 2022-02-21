@@ -25,6 +25,7 @@ text-transform: uppercase;
 .product-remove-button{
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 .product-remove-button p{
     letter-spacing: 0;
@@ -113,6 +114,7 @@ hr.product-card-hr{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-top: 52px;
 }
 .total-container{
     width: 23.08%;

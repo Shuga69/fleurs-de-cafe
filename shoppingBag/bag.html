@@ -25,9 +25,9 @@
                 <img onclick="closeCoupon()" src="../assets/Exit_icon.svg"/>
             </div>
          <div class="upper-header__images">
-             <img src="../assets/Heart_icon.svg"/>
-             <img src="../assets/User.svg"/>
-             <img src="../assets/Bag_icon.svg"/>
+            <a href="../wishlist/wishlist.html"><img src="../assets/Heart_icon.svg"/><div id="wish-counter" class="wish-count"></div></a>
+            <img src="../assets/User.svg"/>
+            <a href="../shoppingBag/bag.html"><img src="../assets/Bag_icon.svg"/></a>
          </div>
     
         
@@ -44,9 +44,9 @@
              </div>
          </div>  
          <div class="upper-header__images">
-             <img src="../assets/Heart_icon.svg"/>
-             <img src="../assets/User.svg"/>
-             <img src="../assets/Bag_icon.svg"/>
+            <a href="../wishlist/wishlist.html"><img src="../assets/Heart_icon.svg"/><div id="wish-counter" class="wish-count"></div></a>
+            <img src="../assets/User.svg"/>
+            <a href="../shoppingBag/bag.html"><img src="../assets/Bag_icon.svg"/></a>
          </div>
      </div>
          
@@ -117,40 +117,9 @@
          <!-- -------------- -->
          <div class="container">
         <div class="bag__inner">
-            <div class="bag-container">
+            <div id="bag-container" class="bag-container">
                 <h2 class="bag__title">Shopping bag</h2>
-                <div class="product-card-container">
-                    <img class="desktop" src="../assets/bagImage.png"/>
-                    <div class="product-card mobile">
-                        <img width="100px" height="100px" src="../assets/bagImage.png"/>
-                        <div class="product-remove-button"><img src="../assets/delete_icon.svg"/><p>Remove</p></div>
-                    </div>
-                    <div class="product-card__text">
-                        <div class="product-card-top-container">
-                            <h3 class="product-card-title">ROMA ESPRESSO BLEND</h3>
-                            <div class="product-remove-button desktop"><img src="../assets/delete_icon.svg"/><p>Remove</p></div>
-                        </div>
-                        <div class="product-card-description">
-                            <p class="product-card-order-description">Southern Italian Roast, 2lb, whole beans</p>
-                            <p class="product-card-price">$15.50</p>
-                            <div class="coffee-quontity-container">
-                                <p class="size-title">
-                                    Quontity
-                                </p>
-                                <div class="coffee-button-container">
-                                    <div class="coffee-quontity-buttons">
-                                        <button onclick="minusQuontity()" class="coffee-quontity-button"><img class="minus" src="../assets/Minus_icon.svg"/></button>
-                                        <input onchange="changeQuolity()" id="quontity-input" class="coffee-quontity-input" value="1"/>
-                                        <button onclick="addQuontity()" class="coffee-quontity-button"><img class="plus" src="../assets/Plus_icon.svg"/></button>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="product-card-total">Total</p>
-                            <p class="product-card-total-price">$31.00</p>
-                        </div>
-                    </div>
-                </div>
-                <hr class="product-card-hr"/>
+               
             </div>
             <div class="total-container">
                 <div class="subtotal">

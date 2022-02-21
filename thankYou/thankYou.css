@@ -1,6 +1,7 @@
 .thank-container{
     width:min(39%,730px);
     margin: 0 auto;
+    margin-top: 72px;
 }
 .thank-title-container{
     display: flex;
@@ -23,14 +24,20 @@
 }
 .go-to-home-button{
     margin-top: 24px;
-    background: #050505;
+    background: #E3E0D9;
     text-align: center;
     width: 210px;
     height: 48px;
-    color: #FFFFFF;
+    color: #231F20;
     font-size: 14px;
     text-transform: uppercase;
     cursor: pointer;
+    border: none;
+}
+.go-to-home-button:hover{
+    background: #050505;
+    color: #FFFFFF;
+   
 }
 .thank-order-container{
     margin-top: 72px;

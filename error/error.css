@@ -1,13 +1,19 @@
 .go-to-home-button{
     margin-top: 24px;
-    background: #050505;
+    background: #E3E0D9;
     text-align: center;
     width: 210px;
     height: 48px;
-    color: #FFFFFF;
+    color: #231F20;
     font-size: 14px;
     text-transform: uppercase;
     cursor: pointer;
+    border: none;
+}
+.go-to-home-button:hover{
+    background: #050505;
+    color: #FFFFFF;
+   
 }
 .error__inner{
     display: flex;
