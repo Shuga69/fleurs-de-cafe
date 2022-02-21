@@ -38,7 +38,7 @@ function renderMobile(mockData) {
     <div class="hover-release-card">
         <div>
             <p id="card-price">${mockData[i].price}</p>
-            <p>ALLERGY HERBAL TEA BLEND BY VANA TISANES</p>
+            <p id="card-title">ALLERGY HERBAL TEA BLEND BY VANA TISANES</p>
             <p class="add-btn">ADD TO CART</p> 
         </div>
     </div>
@@ -54,7 +54,7 @@ function addToWishList(){
 
     let addWishButtons = document.getElementsByClassName('add-to-wishlist')
     JSON.parse(window.localStorage.getItem('wish-card'))? wishList = JSON.parse(window.localStorage.getItem('wish-card')):wishList=[];
-    
+    console.log("123")
     document.getElementById('wish-counter').innerText = wishList.length
  
     for(let item of addWishButtons){
@@ -86,3 +86,4 @@ function addToWishList(){
 
 }
 
+addToWishList()

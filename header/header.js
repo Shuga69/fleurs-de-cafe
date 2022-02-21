@@ -57,3 +57,6 @@ searchBar.addEventListener('keyup', (e) => {
   
 });
 
+wishList = JSON.parse(window.localStorage.getItem('wish-card'));
+wishList.length?document.getElementById('wish-counter').style.display = 'flex':document.getElementById('wish-counter').style.display = 'none'
+document.getElementById('wish-counter').innerText = wishList.length
