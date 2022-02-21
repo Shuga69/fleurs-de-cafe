@@ -63,6 +63,10 @@ text-transform: uppercase;
 .coffee-quontity-button:hover > .plus{
     content: url('../assets/Plus_iconWhite.svg');
 }
+.plus,
+.subtract{
+    pointer-events: none;
+}
   .coffee-quontity-input{
       width: 58px;
       height: 42px;
