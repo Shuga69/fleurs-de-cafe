@@ -33,7 +33,7 @@ function renderMobile(mockData) {
 
     for(let i=0;i<mockData.length;i++){
     str += `<div class="hover-release-card mobile">
-    <img width="165px" src="${mockData[i].image}"/>
+    <img id="card-image" width="165px" src="${mockData[i].image}"/>
     <div class="hover-release-card">
         <div>
             <p id="card-price">${mockData[i].price}</p>
@@ -64,7 +64,7 @@ function addToWishList(){
             let img = wishElemnet.querySelector('#card-image')
             style = img.currentStyle || window.getComputedStyle(img, false),
             image = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-         
+            
             const wishCard = {
                 title:title,
                 price:price,
@@ -100,7 +100,7 @@ function addToCart(){
             let img = cartElement.querySelector('#card-image')
             style = img.currentStyle || window.getComputedStyle(img, false),
             image = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-         
+            !!image?image=style.backgroundImage.slice(4, -1).replace(/"/g, ""):image = img.src
             const cartCard = {
                 title:title,
                 price:price,

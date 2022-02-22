@@ -248,3 +248,4 @@ video.onclick = function(event) {
   }
   console.log("asdasd")
 }
+

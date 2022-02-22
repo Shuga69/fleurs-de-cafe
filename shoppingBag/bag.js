@@ -42,7 +42,7 @@ document.getElementById('bag-container').innerHTML += str
     }
 }
 renderItem()
-let removeButtons = document.getElementsByClassName('product-remove-button desktop')
+let removeButtons = document.getElementsByClassName('product-remove-button')
 
 let subtotal = parseFloat(cartList.map((item)=>item.price.split('$').join('')).reduce((prev,current)=>parseFloat(prev)+parseFloat(current)));
 document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`

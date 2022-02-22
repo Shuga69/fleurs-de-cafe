@@ -1,3 +1,4 @@
+
 .about__upper{
     display: flex;
     justify-content: space-between;
@@ -12,14 +13,12 @@
 line-height: 36px;
 letter-spacing: 0.20em;
 text-transform: uppercase;
+font-weight: 300 !important;
+
+font-family: 'Open Sans', sans-serif;
 }
-.about-title nobr{
-    font-size: 32px;
-line-height: 36px;
-letter-spacing: 0.20em;
-    color: #231E23;
-    
-}
+
+
 .about-greetings{
     font-size: 15px;
     line-height: 22.5px;

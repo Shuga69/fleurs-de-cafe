@@ -35,6 +35,7 @@ const mockData=[
     {id:33, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
     {id:34, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
     {id:35, price:"$15.50",image:"../assets/mockImage3.png", title:"DARK CITY"},
+    
 ]
 
 let elements_per_page = 15;
@@ -81,6 +82,8 @@ function renderButton(pages_count, mockData ){
         let current = document.getElementsByClassName("active");
         current[1].className = current[1].className.replace("active", "");
         buttons[current_page].classList.add('active')
+        addToCart()
+        addToWishList()
     }
          ,false)
     document.getElementById('more-button').addEventListener('click', ()=>{
@@ -92,6 +95,8 @@ function renderButton(pages_count, mockData ){
         let current = document.getElementsByClassName("active");
         current[1].className = current[1].className.replace("active", "");
         buttons[current_page].classList.add('active')
+        addToCart()
+        addToWishList()
     }
          ,false)
 
@@ -102,7 +107,10 @@ function renderButton(pages_count, mockData ){
         meta = pagination(mockData.length,current_page,elements_per_page,pages_count)
         renderDesktop(meta,mockData,true)
         renderMobile(meta,mockData)
+
         }   
+        addToCart()
+        addToWishList()
     }
         ,false)
     document.getElementById('next-button').addEventListener('click', ()=>{
@@ -113,7 +121,9 @@ function renderButton(pages_count, mockData ){
         meta = pagination(mockData.length,current_page+2,elements_per_page,pages_count)
         renderDesktop(meta,mockData,true)
         renderMobile(meta,mockData)
-        }   
+        }
+         addToCart()
+    addToWishList()   
     }
         ,false)
   
@@ -210,8 +220,10 @@ function renderDesktop(meta,mockData) {
         
     }
    
-   
+  
     document.getElementById('card-container').innerHTML += str;
+    addToCart()
+    addToWishList()
 }
 
 function renderMobile(meta,mockData) {
@@ -228,14 +240,17 @@ function renderMobile(meta,mockData) {
     <button class="add-to-wishlist" id="add-to-wishlist"> <img id="card-image" width="165px" src="${mockData[i].image}"/></button>
     <div class="hover-release-card">
         <div>
-            <p>${mockData[i].price}</p>
-            <p>${mockData[i].title}</p>    
+            <p id="card-price">${mockData[i].price}</p>
+            <p id="card-title">${mockData[i].title}</p>    
             <button id="add-cart-button" class="add-btn">ADD TO CART</p> 
         </div>
     </div>
     </div>`
 }
+
     document.getElementById('card-container').innerHTML += str;
+    addToCart()
+    addToWishList()
 }
 renderButton(pages_count,mockData);
 
@@ -292,7 +307,6 @@ function pagination(
         };
     }
 
-
     
     function addToWishList(){
 
@@ -325,7 +339,7 @@ function pagination(
              
                 window.localStorage.setItem('wish-card',JSON.stringify(wishList))
                 document.getElementById('wish-counter').innerText = JSON.parse(window.localStorage.getItem('wish-card')).length
-                console.log(window.localStorage.getItem('wish-card'))
+              
         })
     }
   
@@ -349,7 +363,7 @@ function pagination(
                 let img = cartElement.querySelector('#card-image')
                 style = img.currentStyle || window.getComputedStyle(img, false),
                 image = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-             
+                !!image?image=style.backgroundImage.slice(4, -1).replace(/"/g, ""):image = img.src
                 const cartCard = {
                     title:title,
                     price:price,
@@ -362,10 +376,9 @@ function pagination(
        
                 window.localStorage.setItem('cart-card',JSON.stringify(cartList))
                 document.getElementById('cart-counter').innerText = JSON.parse(window.localStorage.getItem('cart-card')).length
-                console.log(window.localStorage.getItem('cart-card'))
+             
         })
     }
   
     }
-    addToCart()
-    addToWishList()
+   

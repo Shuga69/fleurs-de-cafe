@@ -328,6 +328,17 @@ cursor: pointer;
       border: none;
       width: max-content;
   }
+  .hover-release-card-action button{
+    align-self: flex-end;
+    justify-self: flex-start;
+    width: max-content !important;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width:40px;
+    font-size: 15px;
+
+}
   @media only screen and (max-width: 1500px) {
     .video-content {
      
