@@ -1,6 +1,7 @@
 .wish-card{
     width: 33.3%;
     margin-top: 50px;
+
 }
 
 .wish-card-title{
@@ -15,6 +16,9 @@ margin-top: 16px;
     list-style: 22.5px;
     margin-top: 17px;
     text-transform: uppercase;
+}
+.wish__inner{
+    min-height: 500px;
 }
 .wish-title{
     font-size: 32px;

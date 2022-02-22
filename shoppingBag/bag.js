@@ -6,9 +6,9 @@ function renderItem(){
     let str = '';
     for(let i = 0;i<cartList.length;++i){   
     str = `<div class="product-card-container">
-    <img class="desktop" src="../assets/bagImage.png"/>
+    <img class="desktop" width="255px" height="267px" src="${cartList[i].image}"/>
     <div class="product-card mobile">
-        <img width="100px" height="100px" src="../assets/bagImage.png"/>
+        <img width="100px" height="100px" src="${cartList[i].image}"/>
         <div class="product-remove-button"><img src="../assets/delete_icon.svg"/><p>Remove</p></div>
     </div>
     <div class="product-card__text">
@@ -43,15 +43,15 @@ document.getElementById('bag-container').innerHTML += str
 }
 renderItem()
 let removeButtons = document.getElementsByClassName('product-remove-button desktop')
-let subtotal = 16.5;
+
+let subtotal = parseFloat(cartList.map((item)=>item.price.split('$').join('')).reduce((prev,current)=>parseFloat(prev)+parseFloat(current)));
+document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`
+
 for(let i = 0;i<cartList.length;++i){   
     removeButtons[i].addEventListener('click',()=>{
         cartList.splice(i,1)
-
         window.localStorage.setItem('cart-card',JSON.stringify(cartList))
-        
         document.location.reload() 
-       
     })
  
     document.getElementsByClassName('coffee-quontity-button minus')[i].addEventListener("click",(event)=>{
@@ -62,13 +62,14 @@ for(let i = 0;i<cartList.length;++i){
         totalPrice = productPrice*quontity;
 
         total.querySelector('.product-card-total-price').innerText = `$${totalPrice.toFixed(2)}`
-        subtotal-=parseInt(productPrice)
-        console.log(subtotal)
+        console.log(parseFloat(productPrice))
+        subtotal-=parseFloat(productPrice)
+       
+        document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`
         event.target.parentElement.querySelector('#quontity-input').value = quontity
     })
     
     document.getElementsByClassName('coffee-quontity-button add')[i].addEventListener("click",(event)=>{
-        
         quontity = event.target.parentElement.querySelector('#quontity-input').value
         total = event.target.parentElement.parentElement.parentElement.parentElement
         productPrice = total.querySelector('.product-card-price').innerText.split('$').join('');
@@ -76,8 +77,9 @@ for(let i = 0;i<cartList.length;++i){
         totalPrice = productPrice*quontity;
         total.querySelector('.product-card-total-price').innerText = `$${totalPrice.toFixed(2)}`
         event.target.parentElement.querySelector('#quontity-input').value = quontity
-        subtotal+=parseInt(productPrice)
-        console.log(subtotal)
+        subtotal+=parseFloat(productPrice)
+        document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`
+      
     })
     document.getElementsByClassName('coffee-quontity-input')[i].addEventListener("change",(event)=>{
         quontity = event.target.parentElement.querySelector('#quontity-input').value

@@ -204,7 +204,7 @@ function renderDesktop(meta,mockData) {
             <p id="card-price">${mockData[i].price}</p>
             <p id="card-title">${mockData[i].title}</p>    
         </div>
-        <button id="add-cart-button" class="add-btn">ADD TO CART</p>
+        <button id="add-cart-button" class="add-btn">ADD TO CART</button>
     </div>
 </div></div>`
         
@@ -300,7 +300,7 @@ function pagination(
         JSON.parse(window.localStorage.getItem('wish-card'))? wishList = JSON.parse(window.localStorage.getItem('wish-card')):wishList=[];
         
         document.getElementById('wish-counter').innerText = wishList.length
-     
+    
         for(let item of addWishButtons){
            
             item.addEventListener("click",function(event){
@@ -320,7 +320,7 @@ function pagination(
                 }
                
                 wishList.push(wishCard)
-           
+                console.log(wishList.length)
                 wishList.length?document.getElementById('wish-counter').style.display = 'flex':document.getElementById('wish-counter').style.display = 'none'
              
                 window.localStorage.setItem('wish-card',JSON.stringify(wishList))
@@ -330,13 +330,13 @@ function pagination(
     }
   
     }
-
+  
     function addToCart(){
 
        
         let addCartButtons = document.getElementsByClassName('add-btn')
         JSON.parse(window.localStorage.getItem('cart-card'))? cartList = JSON.parse(window.localStorage.getItem('cart-card')):cartList=[];
-        
+       
         document.getElementById('cart-counter').innerText = cartList.length
 
         for(let item of addCartButtons){
@@ -357,9 +357,9 @@ function pagination(
                 }
                
                 cartList.push(cartCard)
-           
+                
                 cartList.length?document.getElementById('cart-counter').style.display = 'flex':document.getElementById('cart-counter').style.display = 'none'
-             
+       
                 window.localStorage.setItem('cart-card',JSON.stringify(cartList))
                 document.getElementById('cart-counter').innerText = JSON.parse(window.localStorage.getItem('cart-card')).length
                 console.log(window.localStorage.getItem('cart-card'))
