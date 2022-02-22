@@ -143,13 +143,14 @@
         <div class="container">
             <div class="main-section__newest-release">
                 <h2 class="main-section__newest-release__text">Our Newest Release</h2>
-                <div class="main-section__newest-release__card-container" >
-                    <div class="newest-release__card__first" id="card-container"><div class="hover-release-card-action"><div><p id="card-price">$15.50</p><p id="card-title">Dark city</p></div> <button id="add-cart-button" class="add-btn">ADD TO CART</button></div></div>
-                    <div class="newest-release__card__second" id="card-container"><div class="hover-release-card-action"><div><p id="card-price">$15.50</p><p id="card-title">Dark city</p></div> <button id="add-cart-button" class="add-btn">ADD TO CART</button></div></div>
-                    <div class="newest-release__card__third" id="card-container"><div class="hover-release-card-action"><div><p id="card-price">$15.50</p><p id="card-title">Dark city</p></div> <button id="add-cart-button" class="add-btn">ADD TO CART</button></div></div>
+                <div class="main-section__newest-release__card-container" id="card-container" >
+                    <div class="hover-release-card"><div  class="newest-release__card__first" id="card-image"><div class="hover-release-card-action"><div><p id="card-price">$15.50</p><p id="card-title">Dark city</p></div> <button id="add-cart-button" class="add-btn">ADD TO CART</button></div></div></div>
+                    <div class="hover-release-card"><div class="newest-release__card__second" id="card-image"><div class="hover-release-card-action"><div><p id="card-price">$15.50</p><p id="card-title">Dark city</p></div> <button id="add-cart-button" class="add-btn">ADD TO CART</button></div></div></div>
+                    <div class="hover-release-card"><div class="newest-release__card__third" id="card-image"><div class="hover-release-card-action"><div><p id="card-price">$15.50</p><p id="card-title">Dark city</p></div> <button id="add-cart-button" class="add-btn">ADD TO CART</button></div></div></div>
                 </div>
             </div>
         </div>
+       
            <!-- -------------- -->
         <div class="main-section__learn-how-to">
             <div class="main-section__learn-how-to__image">
@@ -215,7 +216,7 @@
         <hr class="footer-hr">
         <div class="footer-copyright">
             
-            <p>Copyright 2022 © FLEURS DE CAF<nobr>È</nobr> LLC. | Development by <strong>Rivo Agency</strong></p>
+            <p>Copyright <nobr id="current-year" class="current-year"></nobr> © FLEURS DE CAF<nobr>È</nobr> LLC. | Development by <strong>Rivo Agency</strong></p>
             <p class="footer-copyright__bottom">All Rights Reserve</p>
         </div>
         </div>
@@ -224,5 +225,7 @@
     </main>
     <script src="./main.js"></script>
     <script src="../header/header.js"></script>
+    <script src="../shoppingBag/addToCart.js"></script>
+    <script src="../footer/footer.js"></script>
 </body>
 </html>

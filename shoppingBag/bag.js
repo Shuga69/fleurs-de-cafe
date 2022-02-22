@@ -42,9 +42,10 @@ document.getElementById('bag-container').innerHTML += str
     }
 }
 renderItem()
-let removeButtons = document.getElementsByClassName('product-remove-button')
-
-let subtotal = parseFloat(cartList.map((item)=>item.price.split('$').join('')).reduce((prev,current)=>parseFloat(prev)+parseFloat(current)));
+let removeButtons = document.getElementsByClassName('product-remove-button desktop')
+let removeButtonsMobile = document.getElementsByClassName('product-remove-button')
+let startPrice = parseFloat(cartList.map((item)=>item.price.split('$').join('')).reduce((prev,current)=>parseFloat(prev)+parseFloat(current)));
+let subtotal = startPrice;
 document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`
 
 for(let i = 0;i<cartList.length;++i){   
@@ -53,7 +54,11 @@ for(let i = 0;i<cartList.length;++i){
         window.localStorage.setItem('cart-card',JSON.stringify(cartList))
         document.location.reload() 
     })
- 
+    removeButtonsMobile[i].addEventListener('click',()=>{
+        cartList.splice(i,1)
+        window.localStorage.setItem('cart-card',JSON.stringify(cartList))
+        document.location.reload() 
+    })
     document.getElementsByClassName('coffee-quontity-button minus')[i].addEventListener("click",(event)=>{
         quontity = event.target.parentElement.querySelector('#quontity-input').value;
         total = event.target.parentElement.parentElement.parentElement.parentElement
@@ -63,7 +68,7 @@ for(let i = 0;i<cartList.length;++i){
 
         total.querySelector('.product-card-total-price').innerText = `$${totalPrice.toFixed(2)}`
         console.log(parseFloat(productPrice))
-        subtotal-=parseFloat(productPrice)
+        subtotal>startPrice?subtotal-=parseFloat(productPrice):subtotal=startPrice
        
         document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`
         event.target.parentElement.querySelector('#quontity-input').value = quontity
@@ -95,3 +100,4 @@ for(let i = 0;i<cartList.length;++i){
 let quontity = 1;
 let quontityInput = document.querySelectorAll('#quontity-input')
 
+let toCheckout=()=>window.location.href = '../checkout/information/information.html'

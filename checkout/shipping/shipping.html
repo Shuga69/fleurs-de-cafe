@@ -98,8 +98,8 @@
                 </div>
 
                 <div class="checkout-button-container">
-                    <button class="continue-shipping">CONTINUE TO PAYMENT</button>
-                    <button class="return-to-card">Return to cart</button>
+                    <button id="payment" class="continue-shipping">CONTINUE TO PAYMENT</button>
+                    <button id="back-information" class="return-to-card">Return to information</button>
                 </div>
                 
                 <hr class="footer-hr mini">
@@ -114,12 +114,10 @@
         <!-- -------------- -->
         <div id="drop-down" class="checkout-right-form shipping">
             <div class="gift-container-form">
-                <div class="gift-container-title">
-                    <img width="64px" height="64px" src="../../assets/releaseImage3.jpg"/>
-                    <h2 class="gift-title">CAMPOS SUPERIOR BLEND</h2>
-                    <p class="gift-price">$31.00</p>
+                <div id="gift-card" class="gift-card-container">
+                
                 </div>
-                <hr class="gift-hr"/>
+          
                 <div class="gift-code-container">
                     <input placeholder="Gift card or discount code" class="gift-code-input"/>
                     <button class="gift-code-button">APPLY</button>
@@ -127,7 +125,7 @@
                 <hr class="gift-hr"/>
                 <div class="gift-subtotal">
                     <p class="gift-subtotal-title">Subtotal</p>
-                    <p class="gift-subtotal-price">$31.00</p>
+                    <p id="subtotal-price" class="gift-subtotal-price">$31.00</p>
                 </div>
                 <div class="gift-shipping">
                     <p class="gift-shipping-title">Shipping</p>

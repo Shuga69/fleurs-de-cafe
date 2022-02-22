@@ -47,41 +47,7 @@ function renderMobile(mockData) {
 }
 renderDesktop(mockData);
 renderMobile(mockData);
-function addToWishList(){
 
-    let addWishButtons = document.getElementsByClassName('add-to-wishlist')
-    JSON.parse(window.localStorage.getItem('wish-card'))? wishList = JSON.parse(window.localStorage.getItem('wish-card')):wishList=[];
-    console.log("123")
-    document.getElementById('wish-counter').innerText = wishList.length
- 
-    for(let item of addWishButtons){
-       
-        item.addEventListener("click",function(event){
-            let wishElemnet = event.target.parentElement.parentElement.parentElement.parentElement;
-            let price = wishElemnet.querySelector('#card-price').innerText
-            let title = wishElemnet.querySelector('#card-title').innerText
-          
-            let img = wishElemnet.querySelector('#card-image')
-            style = img.currentStyle || window.getComputedStyle(img, false),
-            image = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-            
-            const wishCard = {
-                title:title,
-                price:price,
-                image:image
-            }
-           
-            wishList.push(wishCard)
-       
-            wishList.length?document.getElementById('wish-counter').style.display = 'flex':document.getElementById('wish-counter').style.display = 'none'
-         
-            window.localStorage.setItem('wish-card',JSON.stringify(wishList))
-            document.getElementById('wish-counter').innerText = JSON.parse(window.localStorage.getItem('wish-card')).length
-            console.log(window.localStorage.getItem('wish-card'))
-    })
-}
-
-}
 function addToCart(){
 
        
@@ -96,7 +62,7 @@ function addToCart(){
             let cartElement = event.target.parentElement.parentElement.parentElement;
             let price = cartElement.querySelector('#card-price').innerText
             let title = cartElement.querySelector('#card-title').innerText
-           console.log(cartElement)
+       
             let img = cartElement.querySelector('#card-image')
             style = img.currentStyle || window.getComputedStyle(img, false),
             image = style.backgroundImage.slice(4, -1).replace(/"/g, "");
@@ -113,7 +79,7 @@ function addToCart(){
    
             window.localStorage.setItem('cart-card',JSON.stringify(cartList))
             document.getElementById('cart-counter').innerText = JSON.parse(window.localStorage.getItem('cart-card')).length
-            console.log(window.localStorage.getItem('cart-card'))
+            
     })
 }
 

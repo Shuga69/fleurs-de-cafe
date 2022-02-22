@@ -118,32 +118,18 @@
             <div class="thank-title-container">
                 <h2 class="thank-title">Thank you!</h2>
                 <p class="thank-subtitle">Your order has been sent! Our manager will contact you to confirm your order.</p>
-                <button class="go-to-home-button">Go to Home</button>
+                <button id="to-home" class="go-to-home-button">Go to Home</button>
             </div>
             <div class="thank-order-container">
                 <h3 class="order-title">Order information</h3>
                 <div class="order-product-container">
-                    <div class="order-product">
-                        <img width="135px" height="100px" src="../assets/coffeeProductSlide1.png"/>
-                        <div class="order-product-text">
-                            <h3 class="order-product-title">ROMA ESPRESSO BLEND</h3>
-                            <p class="order-product-subtitle">Southern Italian Roast, 2lb, whole beans</p>
-                            <p class="order-product-price">$15.50</p>
-                        </div>
+                    <div id="order-card-container">
+
                     </div>
-                    <hr class="thank-hr"/>
-                    <div class="order-product">
-                        <img width="135px" height="100px" src="../assets/coffeeProductSlide1.png"/>
-                        <div class="order-product-text">
-                            <h3 class="order-product-title">ROMA ESPRESSO BLEND</h3>
-                            <p class="order-product-subtitle">Southern Italian Roast, 2lb, whole beans</p>
-                            <p class="order-product-price">$15.50</p>
-                        </div>
-                    </div>
-                    <hr class="thank-hr"/>
+                    
                     <div class="subtotal-container">
                         <div class="order-subtotal">
-                            <p class="order-subtotal-title">Subtotal</p><p class="order-subtotal-price">$31.00</p>
+                            <p class="order-subtotal-title">Subtotal</p><p id="subtotal-price" class="order-subtotal-price">$31.00</p>
                         </div>
                         <div class="order-shipping">
                             <p class="order-subtotal-title">Shipping</p><p class="order-subtotal-price">Calculated at next step</p>
@@ -215,6 +201,6 @@
         </div>
         </footer>
         <script src="../header/header.js"></script>
-       
+       <script src="./thankYou.js"></script>
 </body>
 </html>

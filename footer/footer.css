@@ -102,6 +102,12 @@ hr.footer-hr{
     margin-bottom: 32px;
     border-top: 1px solid #FFFFFF26; 
 }
+.current-year{
+ 
+    line-height: 15px;
+    color: #7B7979 !important;
+  
+}
 @media only screen and (max-width: 1200px) {
   
     .footer-menu{
