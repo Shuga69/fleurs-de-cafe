@@ -14,7 +14,7 @@
     margin-right: auto !important;
   
 }
-.main-section__newest-release__card-container div {
+.main-section__newest-release__card-container div{
     font-size: 0;
     width: 367px;
     height: 367px;
@@ -154,6 +154,10 @@
 .pagination-group-button-arrow:hover > img{
     content: url('../assets/right-button-arrow-white.svg');
 }
+.add-to-wishlist-mobile{
+
+  
+}
 .pagination-group-button-dots{
     width: 49px;
     height: 49px;
@@ -194,15 +198,19 @@
         display: flex;
         justify-content: space-between;
     }
+    .main-section__newest-release__card-container div{
+        font-size: 0;
+       height: max-content;
+       width: calc(100% - 7.5px);
+    
+    }
+    .hover-release-card-text{
  
-    .hover-release-card div{
-        width: 85%;
         height: max-content;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content:flex-start;
           font-size: 12px;
-          
           margin-left: 7.5px;
      
     }
@@ -211,18 +219,19 @@
         font-weight: 400;
    
     }
-    .hover-release-card div p{
+    .hover-release-card-text p{
         text-transform: uppercase;
           font-size: 12px;
      
     }
     .hover-release-card button{
-        align-self: flex-end;
+        align-self: flex-start;
         justify-self: flex-start;
         width: max-content !important;
         background: none;
         border: none;
         cursor: pointer;
+        padding: 0;
         width:40px;
         line-height: 13.78px;
         font-size: 12px;
@@ -230,20 +239,23 @@
         margin-top: 10px;
     
     }
-  
+  .hover-release-card__inner{
+      display: flex;
+      align-items: flex-start;
+  }
     .hover-release-card.mobile{
         display: flex !important;
    
         flex-direction: column;
         margin-top: 28px;
         width: 165px;
-        height: max-content !important;
+       
     }
-    .hover-release-card div p{
+    .hover-release-card-text p{
         width: 100%;
-        margin-top: 10px;
+        margin-top: 12px;
     }
-    .hover-release-card div p:last-child{
+    .hover-release-card-text p:last-child{
         width: 100%;
     }
 }
