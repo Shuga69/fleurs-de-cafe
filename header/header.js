@@ -49,7 +49,7 @@ let hpCharacters = [];
 
 searchBar.addEventListener('keyup', (e) => {
   
-  if (event.keyCode === 13) {
+  if (e.keyCode === 13) {
     const searchString = e.target.value.toLowerCase();
     window.location.href = `../searchResult/searchResult.html?search=${searchString}`;     
     }

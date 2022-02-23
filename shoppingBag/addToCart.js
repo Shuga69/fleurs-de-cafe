@@ -1,13 +1,12 @@
 function addToCart(){
-
-       
     let addCartButtons = document.getElementsByClassName('add-btn')
     JSON.parse(window.localStorage.getItem('cart-card'))? cartList = JSON.parse(window.localStorage.getItem('cart-card')):cartList=[];
    
     document.getElementById('cart-counter').innerText = cartList.length
-
+   
     for(let item of addCartButtons){
-      
+   
+       
         item.addEventListener("click",function(event){
             let cartElement = event.target.parentElement.parentElement.parentElement;
             let price = cartElement.querySelector('#card-price').innerText
@@ -16,7 +15,6 @@ function addToCart(){
 
             style = img.currentStyle || window.getComputedStyle(img, false),
             image = style.backgroundImage.slice(4, -1).replace(/"/g, "");
-            console.log(image)
             !!image?image=style.backgroundImage.slice(4, -1).replace(/"/g, ""):image = img.src
             const cartCard = {
                 title:title,

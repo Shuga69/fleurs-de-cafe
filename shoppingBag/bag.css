@@ -31,7 +31,14 @@ text-transform: uppercase;
     letter-spacing: 0;
    margin-left: 12px;
    font-size: 15px;
+   margin-top: 7px;
+   width: max-content;
 }
+.product-remove-button.mobile{
+    display: flex !important;
+    margin-top: 16px;    
+}
+
 .coffee-quontity-container{
     margin-top: 16px;
   }
@@ -230,7 +237,7 @@ letter-spacing: 0;
 }
 @media only screen and (max-width: 768px) {
     .product-card.mobile div{
-        margin-top: 16px;
+       
     }
    
 }

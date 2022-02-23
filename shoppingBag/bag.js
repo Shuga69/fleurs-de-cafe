@@ -9,7 +9,7 @@ function renderItem(){
     <img class="desktop" width="255px" height="267px" src="${cartList[i].image}"/>
     <div class="product-card mobile">
         <img width="100px" height="100px" src="${cartList[i].image}"/>
-        <div class="product-remove-button"><img src="../assets/delete_icon.svg"/><p>Remove</p></div>
+        <div class="product-remove-button mobile"><img src="../assets/delete_icon.svg"/><p>Remove</p></div>
     </div>
     <div class="product-card__text">
         <div class="product-card-top-container">
@@ -43,7 +43,7 @@ document.getElementById('bag-container').innerHTML += str
 }
 renderItem()
 let removeButtons = document.getElementsByClassName('product-remove-button desktop')
-let removeButtonsMobile = document.getElementsByClassName('product-remove-button')
+let removeButtonsMobile = document.getElementsByClassName('product-remove-button mobile')
 let startPrice = parseFloat(cartList.map((item)=>item.price.split('$').join('')).reduce((prev,current)=>parseFloat(prev)+parseFloat(current)));
 let subtotal = startPrice;
 document.getElementById('subtotal').innerText = `$${subtotal.toFixed(2)}`

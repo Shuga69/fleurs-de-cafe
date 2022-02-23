@@ -8,11 +8,11 @@ function renderWishList(){
 for(let i = 0;i<wishList.length;++i){   
       
 let str = `<div id="wish-card${i}" class="wish-card">
-<div class="wish-card-image" style="background-image:url('${wishList[i].image}')"><div id="remove-button" class="product-remove-button"><img src="../assets/delete_icon.svg"/><p>Remove</p></div></div>
-<h3 class="wish-card-title">${wishList[i].title}</h3>
+<div id="card-image" class="wish-card-image" style="background-image:url('${wishList[i].image}')"><div id="remove-button" class="product-remove-button"><img src="../assets/delete_icon.svg"/><p>Remove</p></div></div>
+<h3 id="card-title" class="wish-card-title">${wishList[i].title}</h3>
 
-<p class="wish-card-price">${wishList[i].price}</p>
-<button class="wish-card-add">ADD TO CART</button>
+<p id="card-price" class="wish-card-price">${wishList[i].price}</p>
+<button id="add-cart-button" class="add-btn">ADD TO CART</button>
 </div>` 
 
 document.getElementById('wish-container').innerHTML += str
